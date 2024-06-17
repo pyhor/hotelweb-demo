@@ -1,0 +1,69 @@
+/*----------
+ARTICLE
+----------*/
+
+article{
+	padding:10px 0px 10px 0px;
+	width:100%;
+	height:auto;
+	color:#664228;
+}
+
+.parttitle{
+	padding:10px 0px 50px 40px;
+	}
+
+/*--------------
+FAQ ACCORDION STYLE
+--------------*/
+
+.question {
+	background-color:#9c7b52; 
+	color:#ffffff;
+	cursor: pointer;
+	padding: 18px;
+	width: 95%;
+	height:50%;
+	border: none;
+	text-align: left;
+	outline: none;
+	font-size: 16px;
+	font-family: Verdana, "Geneva", Arial, sans-serif;
+	border-style: solid;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  border-color: #361d13;
+  }
+  
+  .question:before{
+	content: "\2795";
+	float:right;
+	color:#ffffff;
+  }
+  
+  .question:hover {
+	background-color:#71775d;
+	color: #ffffff;
+	border-style: solid;
+  border-width: bold;
+  border-radius: 8px;
+  border-color: #333d29;
+  }
+  
+  .answer {
+	display: none;
+	background-color:#FFFBF1;
+	overflow: hidden;
+	padding: 15px 23px 15px 20px;
+	width: 90%;
+	height:50%;
+	font-family:'Times New Roman', Times, serif;
+	font-size: 17px;
+	line-height: 2;
+	border-radius: 15px;
+	border-style: solid;
+    border-width: bold;
+    border-color: #000000;
+	margin-bottom: 20px;
+	color: #3b2014;
+  }

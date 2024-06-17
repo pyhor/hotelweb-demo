@@ -1,0 +1,145 @@
+/*-----------------------------
+ARTICLE
+-----------------------------*/
+
+article{
+	padding:10px 0px 10px 0px;
+	width:100%;
+	height:auto;
+	color:#664228;
+}
+
+.parttitle{
+	padding:10px 0px 50px 40px;
+	}
+
+/*--------------------------------------*/
+/*---------------------------------------
+MESSAGE & REPLY
+----------------------------------------*/
+
+  /* Add styles to the form container */
+  .message{
+	width: 13cm;
+	height:12cm;
+	background-color: #ffffff;
+	font-size:15px;
+	position: relative;
+    left:30%;
+    top:10px;
+	bottom:40px;
+	text-align: center;
+	border-style: solid;
+  border-width: 10px 10px 10px 10px ;
+  border-color: #664228;
+  box-shadow:10px ;
+    margin-bottom: 6%;
+  }
+
+  #title{
+	  padding-top: 25px;
+	  
+  }
+
+  #box{
+	position: relative;
+	left:35px;
+	line-height:1.5;
+	text-align: left;
+	}
+
+	/* textarea*/
+	#messageForm input{
+		width: 70%;
+		padding: 15px;
+		margin: 5px 0px 22px 5px;
+		border: none;
+		background-color: #efe5b2;
+		resize: none;
+		height: 4px;
+		border: 3px solid #405551;
+		transition: 0.5s;
+		font-size: 14px;
+		outline: none;
+	  }
+	
+#messageForm>h3{
+	position: relative;
+    right:150px;
+}
+	/*email.focus*/
+	input#email:focus:hover {
+	  background-color: #efe5b2;
+	  border: 3px solid #42493b;
+	  outline: none;
+	  text-align: left;
+	}
+	
+	/*comment & feedback.focus*/
+	input#msg:focus:hover {
+		background-color: #efe5b2;
+		border: 3px solid #42493b;
+		outline: none;
+		text-align: left;
+	  }
+	
+	  input#email:pseudo-class ,input#msg:active{
+		  background-color: #cfcdc1;
+	  }
+
+	  
+	  
+	/* Set a style for the submit/login button */
+	#messageForm>#send {
+	  background-color:#c05282;
+	  color: white;
+	  border: none;
+	  cursor: pointer;
+	  height:10%;
+	  width: 30%;
+	  margin-left: auto;
+	  margin-right: 15px;
+	}
+	
+	#messageForm>#clear {
+		background-color:#c05282;
+		color: white;
+		border: none;
+		cursor: pointer;
+		height:10%;
+		width: 30%;
+		margin-left: 15px;
+    margin-right: auto;
+	  }
+	
+	/* Add some hover effects to buttons */
+	#messageForm>#send:hover{
+	  opacity: 1;
+	  background-color:#f8b86e;
+	  color:#000000;
+	}
+
+	#messageForm>#clear:hover{
+		opacity: 1;
+	  background-color:#f8b86e;
+	  color:#000000;
+	}
+
+/*-----------------------------
+MESSAGE REPLY
+-----------------------------*/
+
+/*article.reply*/
+img#replygif{
+	display: block;
+	margin-left: 35%;
+	padding:20px;
+	width: 20%;
+}
+
+#reply{
+	font-size: 21px;
+	text-align: center;
+	line-height:3.5;
+}
+

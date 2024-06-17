@@ -1,0 +1,8 @@
+/*  Images  */
+.busan_img {
+    width: 300px;
+    height: 250px;
+    float: left;
+    margin: 10px;
+    border: 1px solid black;
+}

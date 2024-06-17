@@ -1,0 +1,106 @@
+/*----------
+ARTICLE
+----------*/
+
+article{
+	padding:10px 0px 10px 0px;
+	width:100%;
+	height:auto;
+	color:#664228;
+	overflow-x:hidden;
+}
+
+@media only screen and (max-width: 1252px) {
+	article{
+		overflow-x:scroll;
+	}
+
+	table{
+		width:100%;
+		padding:5%;
+	}
+}
+
+.parttitle{
+	padding:10px 0px 50px 40px;
+	}
+
+/*--------EVENTS---------*/ 
+/*-----------events table-----------*/
+table {
+	font-family:'Times New Roman', Times, serif;
+	border-collapse:separate;
+    width: 90%;
+	position:relative;
+    left:5%;
+	font-size:22px;
+	line-height: 2;
+	padding-bottom: 25px;
+	padding-top: 1%;
+  }
+
+  #getposter1{
+	color:#3b2014;
+	  text-decoration: none;
+  }
+
+  #getposter1:hover{
+	  text-decoration: underline;
+	  color:#000000;
+  }
+  
+  #getposter2{
+	color:#efe5b2;
+	text-decoration: none;
+}
+
+#getposter2:hover{
+	text-decoration: underline;
+	color:#ffffff;
+}
+
+  td, th {
+	border: 5px solid #3b2014;
+	text-align: center;
+	padding: 8px;
+  }
+
+  th.theme_time{
+    width:150px;
+  }
+
+  th.details{
+    width:100px;
+  }
+  
+  tr:nth-child(even) {
+	background-color: #9c7b52;
+	color:#efe5b2;
+  }
+
+  img#eventgif{
+	  width:320px;
+  }
+
+/*-------event countdown--------*/
+#event1 {
+	text-align: center;
+	font-size:25px;
+	color: #664228;
+  }
+
+#event1:hover{
+	color:#000000;
+	text-decoration: underline;
+}
+
+#event2 {
+	text-align: center;
+	font-size: 25px;
+	color: #efe5b2;
+  }
+
+#event2:hover{
+	color:#ffffff;
+	text-decoration: underline;
+}
