@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--
+            OJINGEO HOTEL - Reviews   
+            Filename: reviews.html
+        -->
+        <meta charset="utf-8" />
+        <meta name="keywords" content="hotel, rooms, event, Korea, Seoul, Hongdae, Busan, Gangnam, Mapo-gu, Incheon, Gwangju，travel" />
+        <title>OJINGEO HOTEL - Reviews</title>
+        <link href="images/layout/ojingeohotel_logo.jpeg" rel="shortcut icon" type="image/x-icon">
+        <link href="css/layout.css" rel="stylesheet" media="screen">
+        <link href="css/style1.css" rel="stylesheet"/>
+    </head>
+    <body>
+    <header>
+        <nav class="navlist">
+            <a href="#" id="navicon"><img src="images/layout/navicon.png" alt="navicon"></a>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="rooms.html">Rooms</a></li>
+                <li><a href="facilities.html">Facilities</a></li>
+                <li><a href="booking.html">Booking</a></li>
+                <li><a href="membership.html">Membership</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="reviews.html">Reviews</a></li>                               
+                <li class="dropdown">
+                <span><a href="branches.html">Branches &#x25BC;</a></span>
+                <div class="dropdown-list">
+                    <a href="seoul-branch.html">Seoul 서울  &#10146;</a>
+                    <a href="busan-branch.html">Busan 부산  &#10146;</a>
+                    <a href="gangnam-branch.html">Gangnam 강남 &#10146;</a>
+                    <a href="mapo-gu-branch.html">Mapo-gu 마포구  &#10146;</a>
+                    <a href="incheon-branch.html">Incheon 인천 &#10146;</a>
+                    <a href="gwangju-branch.html">Gwangju 광주 &#10146;</a>
+                </div></li>
+                <li><a href="policy.html">Policy</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="aboutus.html">About Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <h1 id="pagename">Reviews</h1> 
+    <!--start reviews part-->
+    <aside id="overallreview">
+        <h2>Overall Reviews<br/>
+            <img src="images/reviews/4_starnobg.png" alt="4 star" class="reviewstar"/><br/>
+        </h2>
+
+        <label for="cleanliness" class="reviewmeter">Cleanliness</label>
+        <meter id="cleanliness" value="4.9" min="0" max="5"></meter>&nbsp;&nbsp;&nbsp;4.9<br/>
+
+        <label for="staff" class="reviewmeter">Staff</label>
+        <meter id="staff" value="4.8" min="0" max="5"></meter>&nbsp;&nbsp;&nbsp;4.8<br/>
+
+        <label for="service" class="reviewmeter">Service</label>
+        <meter id="service" value="4.8" min="0" max="5"></meter>&nbsp;&nbsp;&nbsp;4.8<br/>
+
+        <label for="facilities" class="reviewmeter">Facilities</label>
+        <meter id="facilities" value="4.9" min="0" max="5"></meter>&nbsp;&nbsp;&nbsp;4.9<br/>
+
+        <label for="location" class="reviewmeter">Location</label>
+        <meter id="location" value="4.9" min="0" max="5"></meter>&nbsp;&nbsp;&nbsp;4.9<br/>
+    </aside>
+    <div>
+        <div class="reviews">            
+            <img src="images/reviews/c1.png" alt="customer 1" class="customer"/>
+            <dt>Angela</dt>
+            <img src="images/reviews/5_star.jpg" alt="5 star" class="star"/>
+            <dd>I like Ojingeo Hotel so much ! Good service. A lot facilities. Front lobby staff were friendly too. Will come again ! 💖💖💖</dd> 
+        </div>
+        <div class="reviews"> 
+            <img src="images/reviews/c2.png" alt="customer 1" class="customer"/>
+            <dt>Daniel</dt>
+            <img src="images/reviews/4_star.jpg" class="star"/>
+            <dd>The hotel is clean. Bed was comfortable. Nice hotel. Room service is good, staffs are friendly and nice. Love it !</dd> 
+        </div>
+        <div class="reviews"> 
+            <img src="images/reviews/c3.png" alt="customer 1" class="customer"/>
+            <dt>Amanda</dt>
+            <img src="images/reviews/3_star.jpg" class="star"/>
+            <dd>Service quite slow ! The staff was not really friendly and look like don't want to serve me.</dd> 
+        </div>
+        <div class="reviews"> 
+            <img src="images/reviews/c4.png" alt="customer 1" class="customer"/>
+            <dt>John</dt>
+            <img src="images/reviews/2_star.jpg" class="star"/>
+            <dd>The pool was not in operation during our stay.Customer service quite slow ! Slow responding from staff ! 😤</dd> 
+        </div>
+        <div class="reviews"> 
+            <img src="images/reviews/c5.png" alt="customer 1" class="customer"/>
+            <dt>Ben</dt>
+            <img src="images/reviews/1_star.jpg" class="star"/>
+            <dd>This hotel not clean that I expect ! I found few hair in toilet and sink. Poor room service ! 😡</dd> 
+        </div>
+    </div>
+    <aside id="asidegivereview">
+        <h2>Give Us A Review</h2><br/>
+            <form method="get">
+                <div class="col-1-2">
+                    Name :<br/>
+                    <input type="text" name="namebox" id="namebox" placeholder="Enter your name" size="25" required><br/><br/>
+
+                    Comment :
+                    <textarea name="commentbox" id="commentbox" placeholder="Enter your comment" rows="5" cols="50"></textarea><br/><br/>
+
+                    <label for="cleanliness"class="givereview">Cleanliness</label><br/>
+                    <img src="images/reviews/5_starnobg.png" alt="Give review star" class="givereviewstar"/><br/>
+                    <input type="range" id="ratingstar" name="ratingstar" min="1" max="5"><br/><br/>
+                    
+                    <label for="staff" class="givereview">Staff</label><br/>
+                    <img src="images/reviews/5_starnobg.png" alt="Give review star" class="givereviewstar"/><br/>
+                    <input type="range" id="ratingstar" name="ratingstar" min="1" max="5"><br/>
+                </div>
+                <div class="col-1-2">
+                    <label for="service" class="givereview">Service</label><br/>
+                    <img src="images/reviews/5_starnobg.png" alt="Give review star" class="givereviewstar"/><br/>
+                    <input type="range" id="ratingstar" name="ratingstar" min="1" max="5"><br/><br/>
+                
+                    <label for="facilities" class="givereview">Facilities</label><br/>
+                    <img src="images/reviews/5_starnobg.png" alt="Give review star" class="givereviewstar"/><br/>
+                    <input type="range" id="ratingstar" name="ratingstar" min="1" max="5"><br/><br/>
+                
+                    <label for="location" class="givereview">Location</label><br/>
+                    <img src="images/reviews/5_starnobg.png" alt="Give review star" class="givereviewstar"/><br/>
+                    <input type="range" id="ratingstar" name="ratingstar" min="1" max="5"><br/>
+                </div>           
+                <input type="submit" value="Submit" id="reviewsubmit">
+            </form>
+    </aside>
+    <!--end reviews part-->
+    <footer>
+        <div><a href="message.html" class="gocomment">Want to leave a comment?</a></div>
+        
+        <div class="footerdiv" id="callfooterdiv">
+        <img src="images/layout/phone.png" alt="Contact Us" id="callicon" title="Ojingeo Hotel information">
+        <p class="contact">Contact Us</p>
+            <div id="info">
+            <a href="tel:+826-969-6769" style="color: #ffffff;">&#9742;: (+82)6-969-6769</a><br>
+                <a href="mailto:info@ojingeohotel.com" style="color: #ffffff;">&#9993;: info@ojingeohotel.com</a>
+                <br>Hongdae, Seoul, Korea &#127472;&#127479;
+            </div>
+        </div>
+        <div class="footerdiv">
+            <img src="images/layout/handshake.png" alt="Sponsorship"  title="Ojingeo Hotel Sponsorship" id="sponsoredicon">
+            <p class="sponsored">Our Sponsorship</p>
+            <img src="images/layout/sponsorship.jpg" alt="Sponsored" id="sponsored" title="Ojingeo Hotel Sponsorship">
+        </div>
+        <div class="footerdiv">
+            <img src="images/layout/check-mark.png" alt="Secure Payment" title="Ojingeo Hotel Secure Payment" id="secureicon" >
+            <p class="payment">Secure Payment</p>
+            <img src="images/layout/payment.png" alt="Payment" id="payment" title="Ojingeo Hotel Secure Payment">
+        </div>
+        <p id="copyright">Copyrights &#169; 2021. All rights reserved by Ojingeo Hotel</p>
+        
+    </footer>
+</body>
+</html>

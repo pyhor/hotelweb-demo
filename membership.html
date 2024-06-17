@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--
+            OJINGEO HOTEL - Membership   
+            Filename: membership.html
+        -->
+        <meta charset="utf-8" />
+        <meta name="keywords" content="hotel, rooms, event, Korea, Seoul, Hongdae, Busan, Gangnam, Mapo-gu, Incheon, Gwangju，travel" />
+        <title>OJINGEO HOTEL - Membership</title>
+        <link href="images/layout/ojingeohotel_logo.jpeg" rel="shortcut icon" type="image/x-icon">
+        <link href="css/layout.css" rel="stylesheet" media="screen">
+        <link href="css/style1.css" rel="stylesheet"/>
+        <script type="text/javascript">
+            function startmembership() {  
+                var Today = new Date();
+    
+                document.getElementById('memberdate').value = Today.getDate()+"/"+ (Today.getMonth()+1) + "/" +Today.getFullYear();
+                
+                document.membership_form.firstName.focus();
+            }
+    
+            function submitmembershipform(){
+                    if (document.membership_form.checkValidity()){
+                        if (confirm('Are you sure want to become our membership ?')==1){
+                            var welcomepage;
+                            welcomepage = window.open("welcomemember.html");
+                            return true;
+                        }
+                    }
+                    else{  
+                        return false;
+                    }
+            }
+    
+            function cancelmemberform() {
+                if (confirm('Are you sure want to cancel this membership ?')==1){
+                    document.membership_form.reset();
+                    window.location.reload();
+                }
+            }
+        </script>
+    </head>
+    <body onload="startmembership();">
+    <header>
+        <nav class="navlist">
+            <a href="#" id="navicon"><img src="images/layout/navicon.png" alt="navicon"></a>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="rooms.html">Rooms</a></li>
+                <li><a href="facilities.html">Facilities</a></li>
+                <li><a href="booking.html">Booking</a></li>
+                <li><a href="membership.html">Membership</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="reviews.html">Reviews</a></li>                               
+                <li class="dropdown">
+                <span><a href="branches.html">Branches &#x25BC;</a></span>
+                <div class="dropdown-list">
+                    <a href="seoul-branch.html">Seoul 서울  &#10146;</a>
+                    <a href="busan-branch.html">Busan 부산  &#10146;</a>
+                    <a href="gangnam-branch.html">Gangnam 강남 &#10146;</a>
+                    <a href="mapo-gu-branch.html">Mapo-gu 마포구  &#10146;</a>
+                    <a href="incheon-branch.html">Incheon 인천 &#10146;</a>
+                    <a href="gwangju-branch.html">Gwangju 광주 &#10146;</a>
+                </div></li>
+                <li><a href="policy.html">Policy</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="aboutus.html">About Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <h1 id="pagename">Membership</h1>
+    <!--start membership part-->
+    <aside id="memberaside">
+        <h2 style="color: #ffe600;">Membership Benefits</h2>
+        <ul>
+            <li class="memberdscription">&nbsp;FREE TO APPLY</li>
+            <li class="memberdscription">&nbsp;FREE car park</li>
+            <li class="memberdscription">&nbsp;No renew membership requirement</li>
+            <li class="memberdscription">&nbsp;Get 10% discount booking any room</li>
+            <li class="memberdscription">&nbsp;Get 5% discount booking any facility</li>
+            <li class="memberdscription">&nbsp;Get 5% discount dining deals</li>
+        </ul>
+    </ul>
+    </aside>
+    <form id="membership_form" name="membership_form"  method="get" onsubmit="submitmembershipform();" >
+        <fieldset id="membership">
+            <legend>Join Us Now !</legend>
+            <div class="membership_form">
+                <label for="memberdate">Date :</label>
+                <input type="text" name="memberdate" id="memberdate" size="10" disabled/>
+            </div>
+            <div class="membership_form">
+                <label for="firstName">First Name :</label>
+                <input type="text" name="firstName" id="firstName" placeholder="Enter your first name"  required maxlength="20" size="25"/>
+            </div>
+            <div class="membership_form">
+                <label for="lastName">Last Name :</label>
+                <input type="text" name="lastName" id="lastName" placeholder="Enter your last name"  required maxlength="20" size="25"/>
+            </div>
+            <div class="membership_form">
+                <label for="gender">Gender :</label>
+                <input type="radio" name="gender" id="male" value="male" checked>
+                <label for="male">Male</label>
+              
+                <input type="radio" name="gender" id="female" value="female">
+                <label for="female">Female</label>
+            </div>
+            <div class="membership_form">
+                <label for="DOB">Date of Birth :</label>
+                <input type="date" name="DOB" id="DOB" required>
+            </div>   
+            <div class="membership_form">
+                <input type="radio" name="icNo/passNo" id="icNo" checked/>
+                <label for="icNo">IC Number</label>
+
+                <input type="radio" name="icNo/passNo" id="passNo" />
+                <label for="passNo">Passport Number</label>
+           
+                <input type="text" name="icNo/passNoInput" id="icNo/passNoInput" placeholder="Enter IC No. OR Passport No." size="30" required />
+            </div>       
+            <div class="membership_form">
+                <label for="phoneNum">Contact Number :</label>
+                <input type="tel" name="phoneNum" id="phoneNum" size="15" maxlength="10" placeholder="(000) 000 0000" pattern="^\d{10}$|^(\(\d{3}\)\s*)?\d{3}[\s-]?\d{4}$" required>
+            </div>
+            <div class="membership_form">
+                <label for="email">E-mail :</label>
+                <input type="email" name="email" id="email" placeholder="Enter your email" required maxlength="30" size="35">
+            </div>
+            <div class="membership_form">
+                <label for="country">Country :</label>
+                <select name="country" required>
+                        <option value="">--Please choose your country--</option>
+                        <option value="afghanistan">Afghanistan</option>
+                        <option value="albania">Albania</option>
+                        <option value="algeria">Algeria</option>
+                        <option value="andorra">Andorra</option>
+                        <option value="angola">Angola</option>
+                        <option value="antiguaandBarbuda">Antigua and Barbuda</option>
+                        <option value="argentina">Argentina</option>
+                        <option value="armenia">Armenia</option>
+                        <option value="australia">Australia</option>
+                        <option value="austria">Austria</option>
+                        <option value="azerbaijan">Azerbaijan</option>
+                        <option value="bahamas">Bahamas</option>
+                        <option value="bahrain">Bahrain</option>
+                        <option value="bangladesh">Bangladesh</option>
+                        <option value="barbados">Barbados</option>
+                        <option value="belarus">Belarus</option>
+                        <option value="belgium">Belgium</option>
+                        <option value="belize">Belize</option>
+                        <option value="benin">Benin</option>
+                        <option value="bhutan">Bhutan</option>
+                        <option value="bolivia">Bolivia</option>
+                        <option value="bosniaandHerzegovina">Bosnia and Herzegovina</option>
+                        <option value="botswana">Botswana</option>
+                        <option value="brazil">Brazil</option>
+                        <option value="brunei">Brunei</option>
+                        <option value="bulgaria">Bulgaria</option>
+                        <option value="burkina Faso">Burkina Faso</option>
+                        <option value="burundi">Burundi</option>
+                        <option value="caboVerde">Cabo Verde</option>
+                        <option value="cambodia">Cambodia</option>
+                        <option value="cameroon">Cameroon</option>
+                        <option value="canada">Canada</option>
+                        <option value="centralAfricanRepublic">Central African Republic</option>
+                        <option value="chad">Chad</option>
+                        <option value="chile">Chile</option>
+                        <option value="china">China</option>
+                        <option value="colombia">Colombia</option>
+                        <option value="comoros">Comoros</option>
+                        <option value="congo">Congo</option>
+                        <option value="costaRica">Costa Rica</option>
+                        <option value="croatia">Croatia</option>
+                        <option value="cuba">Cuba</option>
+                        <option value="cyprus">Cyprus</option>
+                        <option value="czechRepublic(Czechia)">Czech Republic (Czechia)</option>
+                        <option value="Côted'Ivoire">Côte d'Ivoire</option>
+                        <option value="denmark">Denmark</option>
+                        <option value="djibouti">Djibouti</option>
+                        <option value="dominica">Dominica</option>
+                        <option value="dominican Republic">Dominican Republic</option>
+                        <option value="drCongo">DR Congo</option>
+                        <option value="ecuador">Ecuador</option>
+                        <option value="egypt">Egypt</option>
+                        <option value="elSalvador">El Salvador</option>
+                        <option value="equatorial Guinea">Equatorial Guinea</option>
+                        <option value="eritrea">Eritrea</option>
+                        <option value="estonia">Estonia</option>
+                        <option value="eswatini">Eswatini</option>
+                        <option value="ethiopia">Ethiopia</option>
+                        <option value="fiji">Fiji</option>
+                        <option value="finland">Finland</option>
+                        <option value="france">France</option>
+                        <option value="gabon">Gabon</option>
+                        <option value="gambia">Gambia</option>
+                        <option value="georgia">Georgia</option>
+                        <option value="germany">Germany</option>
+                        <option value="ghana">Ghana</option>
+                        <option value="greece">Greece</option>
+                        <option value="grenada">Grenada</option>
+                        <option value="guatemala">Guatemala</option>
+                        <option value="guinea">Guinea</option>
+                        <option value="guinea-Bissau">Guinea-Bissau</option>
+                        <option value="guyana">Guyana</option>
+                        <option value="haiti">Haiti</option>
+                        <option value="holySee">Holy See</option>
+                        <option value="honduras">Honduras</option>
+                        <option value="hungary">Hungary</option>
+                        <option value="iceland">Iceland</option>
+                        <option value="india">India</option>
+                        <option value="indonesia">Indonesia</option>
+                        <option value="iran">Iran</option>
+                        <option value="iraq">Iraq</option>
+                        <option value="ireland">Ireland</option>
+                        <option value="israel">Israel</option>
+                        <option value="italy">Italy</option>
+                        <option value="jamaica">Jamaica</option>
+                        <option value="japan">Japan</option>
+                        <option value="jordan">Jordan</option>
+                        <option value="kazakhstan">Kazakhstan</option>
+                        <option value="kenya">Kenya</option>
+                        <option value="kiribati">Kiribati</option>
+                        <option value="kuwait">Kuwait</option>
+                        <option value="kyrgyzstan">Kyrgyzstan</option>
+                        <option value="laos">Laos</option>
+                        <option value="latvia">Latvia</option>
+                        <option value="lebanon">Lebanon</option>
+                        <option value="lesotho">Lesotho</option>
+                        <option value="liberia">Liberia</option>
+                        <option value="libya">Libya</option>
+                        <option value="liechtenstein">Liechtenstein</option>
+                        <option value="lithuania">Lithuania</option>
+                        <option value="luxembourg">Luxembourg</option>
+                        <option value="madagascar">Madagascar</option>
+                        <option value="malawi">Malawi</option>
+                        <option value="malaysia">Malaysia</option>
+                        <option value="maldives">Maldives</option>
+                        <option value="mali">Mali</option>
+                        <option value="malta">Malta</option>
+                        <option value="marshallIslands">Marshall Islands</option>
+                        <option value="mauritania">Mauritania</option>
+                        <option value="mauritius">Mauritius</option>
+                        <option value="mexico">Mexico</option>
+                        <option value="micronesia">Micronesia</option>
+                        <option value="moldova">Moldova</option>
+                        <option value="monaco">Monaco</option>
+                        <option value="mongolia">Mongolia</option>
+                        <option value="montenegro">Montenegro</option>
+                        <option value="morocco">Morocco</option>
+                        <option value="mozambique">Mozambique</option>
+                        <option value="myanmar">Myanmar</option>
+                        <option value="namibia">Namibia</option>
+                        <option value="nauru">Nauru</option>
+                        <option value="nepal">Nepal</option>
+                        <option value="netherlands">Netherlands</option>
+                        <option value="newZealand">New Zealand</option>
+                        <option value="nicaragua">Nicaragua</option>
+                        <option value="niger">Niger</option>
+                        <option value="nigeria">Nigeria</option>
+                        <option value="northKorea">North Korea</option>
+                        <option value="northMacedonia">North Macedonia</option>
+                        <option value="norway">Norway</option>
+                        <option value="oman">Oman</option>
+                        <option value="pakistan">Pakistan</option>
+                        <option value="palau">Palau</option>
+                        <option value="panama">Panama</option>
+                        <option value="papuaNewGuinea">Papua New Guinea</option>
+                        <option value="paraguay">Paraguay</option>
+                        <option value="peru">Peru</option>
+                        <option value="philippines">Philippines</option>
+                        <option value="poland">Poland</option>
+                        <option value="portugal">Portugal</option>
+                        <option value="qatar">Qatar</option>
+                        <option value="romania">Romania</option>
+                        <option value="russia">Russia</option>
+                        <option value="rwanda">Rwanda</option>
+                        <option value="saintKittsandNevis">Saint Kitts and Nevis</option>
+                        <option value="saintLucia">Saint Lucia</option>
+                        <option value="samoa">Samoa</option>
+                        <option value="sanMarino">San Marino</option>
+                        <option value="saoTomeandPrincipe">Sao Tome and Principe</option>
+                        <option value="saudiArabia">Saudi Arabia</option>
+                        <option value="senegal">Senegal</option>
+                        <option value="serbia">Serbia</option>
+                        <option value="seychelles">Seychelles</option>
+                        <option value="sierraLeone">Sierra Leone</option>
+                        <option value="singapore">Singapore</option>
+                        <option value="slovakia">Slovakia</option>
+                        <option value="slovenia">Slovenia</option>
+                        <option value="solomonIslands">Solomon Islands</option>
+                        <option value="somalia">Somalia</option>
+                        <option value="southAfrica">South Africa</option>
+                        <option value="southKorea">South Korea</option>
+                        <option value="southSudan">South Sudan</option>
+                        <option value="spain">Spain</option>
+                        <option value="sriLanka">Sri Lanka</option>
+                        <option value="st.Vincent&Grenadines">St. Vincent & Grenadines</option>
+                        <option value="stateofPalestine">State of Palestine</option>
+                        <option value="sudan">Sudan</option>
+                        <option value="suriname">Suriname</option>
+                        <option value="sweden">Sweden</option>
+                        <option value="switzerland">Switzerland</option>
+                        <option value="syria">Syria</option>
+                        <option value="tajikistan">Tajikistan</option>
+                        <option value="tanzania">Tanzania</option>
+                        <option value="thailand">Thailand</option>
+                        <option value="timor-Leste">Timor-Leste</option>
+                        <option value="togo">Togo</option>
+                        <option value="tonga">Tonga</option>
+                        <option value="trinidadandTobago">Trinidad and Tobago</option>
+                        <option value="tunisia">Tunisia</option>
+                        <option value="turkey">Turkey</option>
+                        <option value="turkmenistan">Turkmenistan</option>
+                        <option value="tuvalu">Tuvalu</option>
+                        <option value="uganda">Uganda</option>
+                        <option value="ukraine">Ukraine</option>
+                        <option value="unitedArabEmirates">United Arab Emirates</option>
+                        <option value="unitedKingdom">United Kingdom</option>
+                        <option value="unitedStates">United States</option>
+                        <option value="uruguay">Uruguay</option>
+                        <option value="uzbekistan">Uzbekistan</option>
+                        <option value="vanuatu">Vanuatu</option>
+                        <option value="venezuela">Venezuela</option>
+                        <option value="vietnam">Vietnam</option>
+                        <option value="yemen">Yemen</option>
+                        <option value="zambia">Zambia</option>
+                        <option value="zimbabwe">Zimbabwe</option>
+                    </select>
+            </div>
+            <div class="membership_form">
+                <label for="address">Address :</label>
+                <textarea name="address" id="address" placeholder="Enter your home address"  rows="5" cols="50" required></textarea>
+            </div>
+            <div id="membershipbuttons">
+                <input type="button" value="Cancel" onclick="cancelmemberform();"/>
+                <input type="submit" value="Submit" />
+            </div>
+        </fieldset>
+        <marquee><h4 id="animationtext"><i><img src="images/rooms/logocrop.jpeg" class="animationimg">Can be applied for all branches of OJINGEO HOTEL<img src="images/rooms/logocrop.jpeg" class="animationimg"></i></h4></marquee>
+    </form>
+    <!--end membership part-->
+    <footer>
+        <div><a href="message.html" class="gocomment">Want to leave a comment?</a></div>
+        
+        <div class="footerdiv" id="callfooterdiv">
+        <img src="images/layout/phone.png" alt="Contact Us" id="callicon" title="Ojingeo Hotel information">
+        <p class="contact">Contact Us</p>
+            <div id="info">
+            <a href="tel:+826-969-6769" style="color: #ffffff;">&#9742;: (+82)6-969-6769</a><br>
+                <a href="mailto:info@ojingeohotel.com" style="color: #ffffff;">&#9993;: info@ojingeohotel.com</a>
+                <br>Hongdae, Seoul, Korea &#127472;&#127479;
+            </div>
+        </div>
+        <div class="footerdiv">
+            <img src="images/layout/handshake.png" alt="Sponsorship"  title="Ojingeo Hotel Sponsorship" id="sponsoredicon">
+            <p class="sponsored">Our Sponsorship</p>
+            <img src="images/layout/sponsorship.jpg" alt="Sponsored" id="sponsored" title="Ojingeo Hotel Sponsorship">
+        </div>
+        <div class="footerdiv">
+            <img src="images/layout/check-mark.png" alt="Secure Payment" title="Ojingeo Hotel Secure Payment" id="secureicon" >
+            <p class="payment">Secure Payment</p>
+            <img src="images/layout/payment.png" alt="Payment" id="payment" title="Ojingeo Hotel Secure Payment">
+        </div>
+        <p id="copyright">Copyrights &#169; 2021. All rights reserved by Ojingeo Hotel</p>
+        
+    </footer>
+</body>
+</html>

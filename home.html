@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="keywords" content="hotel, rooms, event, Korea, Seoul, Hongdae, Busan, Gangnam, Mapo-gu, Incheon, Gwangju，travel" />
+        <title>Ojingeo Hotel - Home</title>
+        <link href="images/layout/ojingeohotel_logo.jpeg" rel="shortcut icon" type="image/x-icon">
+        <link href="css/layout.css" rel="stylesheet" media="screen">
+        <link rel="stylesheet" href="css/home.css">
+        <script src="javascript/slideshow.js" defer></script>
+        <script src="javascript/countdown_event.js" defer></script>
+    </head>
+<body>
+
+    <header>
+        <nav class="navlist">
+             <a href="#" id="navicon"><img src="images/layout/navicon.png" alt="navicon"></a>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="rooms.html">Rooms</a></li>
+                <li><a href="facilities.html">Facilities</a></li>
+                <li><a href="booking.html">Booking</a></li>
+                <li><a href="membership.html">Membership</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="reviews.html">Reviews</a></li>                               
+                <li class="dropdown">
+                <span><a href="branches.html">Branches &#x25BC;</a></span>
+                <div class="dropdown-list">
+                    <a href="seoul-branch.html">Seoul 서울  &#10146;</a>
+                    <a href="busan-branch.html">Busan 부산  &#10146;</a>
+                    <a href="gangnam-branch.html">Gangnam 강남 &#10146;</a>
+                    <a href="mapo-gu-branch.html">Mapo-gu 마포구  &#10146;</a>
+                    <a href="incheon-branch.html">Incheon 인천 &#10146;</a>
+                    <a href="gwangju-branch.html">Gwangju 광주 &#10146;</a>
+                </div></li>
+                <li><a href="policy.html">Policy</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="aboutus.html">About Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <h1 id="pagename">Ojingeo Hotel</h1>
+
+
+ <body>
+   <!--running text-->  
+ <marquee behavior="scroll" direction="left" scrollamount="8" id="runningtext">
+    <p>~ 안녕하세요 WELCOME TO OJINGEO HOTEL ~ </p>
+ </marquee>
+
+ <!--article-->
+ <article>
+
+     <!--slideshow-->
+     <h2 class="parttitle">Our Gallery 갤러리 &#9899;</h2>
+
+     <div class="slideshow-container">
+     <div class="mySlides-fade">
+        <video width="1150" height="370" id="hotelvideo" controls>
+            <source src="images/home/hotel video.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+          </video>
+    </div>
+
+        <div class="mySlides-fade">
+            <div class="numbertext">1 / 6</div>
+            <div class="numbertext2" >2 / 6</div>
+            <img src="images/home/1-2.png" style="width:135%" title="Outdoor & Bedroom">
+            <p style="font-size: 25px;font-family: Verdana, 'Geneva', Arial, sans-serif;color: #664228;">Outdoor & Bedroom</p>
+       </div>
+
+        <div class="mySlides-fade">
+            <div class="numbertext">3 / 6</div>
+            <div class="numbertext2" >4 / 6</div>
+            <img src="images/home/3-4.png" style="width:135%">
+            <p style="font-size: 25px;font-family: Verdana, 'Geneva', Arial, sans-serif;color: #664228;">Bedroom & Swimming Pool</p>
+        </div>
+
+        <div class="mySlides-fade">
+            <div class="numbertext">5 / 6</div>
+            <div class="numbertext2" >6 / 6</div>
+            <img src="images/home/5-6.png" style="width:135%">
+            <p style="font-size: 25px;font-family: Verdana, 'Geneva', Arial, sans-serif;color: #664228;">Gym Room & Washroom</p>
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+
+       <br>
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+        </div>
+
+             <!--upcoming event-->
+             <hr>
+            <h2 class="parttitle">Upcoming Event 예정된 이벤트 &#9899;</h2>
+            <p class="details">The real-life New Squid Game is counting down!</p>
+            <p id="event_countdown" title="Dec 18 2021"></p>
+            <p class="special">This isn't the same Korean Squid Game you're seen with; this is a brand-new Squid Game! 
+            <br>We warmly invite you to try out a fresh sensation and experience in our real-life New Squid Game.
+        <br><br>Please see our <a href="events.html" id="events">events page</a>, if you are interested to know more about our events!</p>
+            <img src="images/home/The New Squid Game.gif" id="eventgif">
+           
+             <!--our branches-->
+            <hr>
+            <h2 class="parttitle">Our Branches 가지 &#9899;</h2>
+            <a href="seoul-branch.html" id="seoul">Seoul 서울 &#9733;</a>
+            <a href="busan-branch.html" id="busan">Busan 부산  &#9733;</a>
+            <a href="gangnam-branch.html" id="gangman">Gangnam 강남  &#9733;</a>
+            <a href="mapo-gu-branch.html" id="mapogu">Mapo-gu 마포구  &#9733;</a>
+            <a href="incheon-branch.html" id="incheon">Incheon 인천 &#9733;</a>
+            <a href="gwangju-branch.html" id="gwangju">Gwangju 광주 &#9733;</a>
+
+            <!--notice-->
+            <hr>
+            <h2 class="parttitle">Notice 통지&#9899;</h2>
+            <p class="notice"style="">&#9658; Notice:&nbsp;Due to the Covid-19, We have updated our policy, please see the 
+            <a href="policy.html" id="policy">policy page</a> to find out the details. Thank you. &#9668;</p>
+</article>
+
+<!--footer-->
+<footer>
+    <div><a href="message.html" class="gocomment">Want to leave a comment?</a></div>
+    
+    <div class="footerdiv" id="callfooterdiv">
+    <img src="images/layout/phone.png" alt="Contact Us" id="callicon" title="Ojingeo Hotel information">
+    <p class="contact">Contact Us</p>
+        <div id="info">
+        <a href="tel:+826-969-6769" style="color: #ffffff;">&#9742;: (+82)6-969-6769</a><br>
+            <a href="mailto:info@ojingeohotel.com" style="color: #ffffff;">&#9993;: info@ojingeohotel.com</a>
+            <br>Hongdae, Seoul, Korea &#127472;&#127479;
+        </div>
+    </div>
+    <div class="footerdiv">
+        <img src="images/layout/handshake.png" alt="Sponsorship"  title="Ojingeo Hotel Sponsorship" id="sponsoredicon">
+        <p class="sponsored">Our Sponsorship</p>
+        <img src="images/layout/sponsorship.jpg" alt="Sponsored" id="sponsored" title="Ojingeo Hotel Sponsorship">
+    </div>
+    <div class="footerdiv">
+        <img src="images/layout/check-mark.png" alt="Secure Payment" title="Ojingeo Hotel Secure Payment" id="secureicon" >
+        <p class="payment">Secure Payment</p>
+        <img src="images/layout/payment.png" alt="Payment" id="payment" title="Ojingeo Hotel Secure Payment">
+    </div>
+    <p id="copyright">Copyrights &#169; 2021. All rights reserved by Ojingeo Hotel</p>
+    
+  </footer>
+  </body>
+
+</html>
+
+
+
+
+

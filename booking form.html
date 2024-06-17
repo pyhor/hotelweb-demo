@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="keywords" content="hotel, rooms, event, Korea, Seoul, Hongdae, Busan, Gangnam, Mapo-gu, Incheon, Gwangju，travel" />
+        <title>Ojingeo Hotel - Booking Form</title>
+        <link href="images/layout/ojingeohotel_logo.jpeg" rel="shortcut icon" type="image/x-icon">
+        <link href="css/layout.css" rel="stylesheet" media="screen">
+        <script src="javascript/booking form.js"></script>
+    </head>
+<body>
+
+    <header>
+        <nav class="navlist">
+             <a href="#" id="navicon"><img src="images/layout/navicon.png" alt="navicon"></a>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="rooms.html">Rooms</a></li>
+                <li><a href="facilities.html">Facilities</a></li>
+                <li><a href="booking.html">Booking</a></li>
+                <li><a href="membership.html">Membership</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="reviews.html">Reviews</a></li>                               
+                <li class="dropdown">
+                <span><a href="branches.html">Branches &#x25BC;</a></span>
+                <div class="dropdown-list">
+                    <a href="seoul-branch.html">Seoul 서울  &#10146;</a>
+                    <a href="busan-branch.html">Busan 부산  &#10146;</a>
+                    <a href="gangnam-branch.html">Gangnam 강남 &#10146;</a>
+                    <a href="mapo-gu-branch.html">Mapo-gu 마포구  &#10146;</a>
+                    <a href="incheon-branch.html">Incheon 인천 &#10146;</a>
+                    <a href="gwangju-branch.html">Gwangju 광주 &#10146;</a>
+                </div></li>
+                <li><a href="policy.html">Policy</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="aboutus.html">About Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <h1 id="pagename">Booking Form</h1>
+
+  
+    <div>
+        <h1 style="padding-left: 30px;">BOOKING ROOM FORM</h1>
+    </div>
+            <div>
+              <form action="booking-received.html" name="bform" style="padding-left: 30px;" onsubmit="return valiForm()">
+                <div>
+                    <label for="nameBox">Name:</label>
+                    <input type="text" name="custName" id="nameBox" placeholder="First and Last Name" required />
+                </div><br/>
+
+                <div>
+                    <label for="phoneBox">Phone No:</label>
+                    <input type="tel" name="custPhone" id="phoneBox"  required placeholder="(xxx) xxx-xxxx" pattern="^\d{10}$|^(\(\d{3}\)\s*)?\d{3}[\s-]?\d{4}$" required/>
+                </div><br/>
+
+                <div>
+                    <label for="emailBox">Email:</label>
+                    <input type="email" name="custEmail" id="emailBox" placeholder="ex:name@example.com" required/>
+                </div><br/>
+
+                <div>
+                    <label for="roomBox">Room:</label>
+                    <select name="roomBoxN" id="roomBox" onchange="roomPricing()" required>
+                      <option id="selector" value="0.00">Select a room</option>
+                      <option id="miniR" value="400.00">Mini Room</option>
+                      <option id="luxuryR" value="800.00">Luxury Room</option>
+                      <option id="premiumR" value="1200.00">Premium Room</option>
+                    </select>
+                </div><br/>
+                
+                <div>
+                    <label for="priceBox1">Room Price (RM):</label>
+                    <input type="text" name="price1" id="priceBox1" class=numbers value="0.00" disabled>
+                </div>
+
+                <br/>
+
+                <div>
+                    <label for="quantity">Number of Guests:</label>
+                    <input type="number" id="quantity" name="quantity" min="1" required>
+                </div><br/>
+
+                <div>
+                    <label for="branchBox">Branch:</label>
+                    <select name="branchBoxN" id="branchBox" required>
+                        <option value="0">Select a branch</option>
+                        <option value="1">Seoul</option>
+                        <option value="2">Busan</option>
+                        <option value="3">Gangnam</option>
+                        <option value="4">Mapo-gu</option>
+                        <option value="5">Incheon</option>
+                        <option value="6">Gwangju</option>
+                    </select>
+                </div><br/>
+
+                <div>
+                    <label for="datebox">Check In Date:</label>
+                    <input type="date" id="checkInBox" name="checkDate" disabled onchange="daysBetween()">
+                </div><br/>
+
+                <div>
+                    <label for="datebox">Check Out Date:</label>
+                    <input type="date" id="checkOutBox" name="checkDate" disabled onchange="daysBetween()">
+                </div><br/>
+                <div>
+                    <label for="durationbox">Duration of Stay (Days):</label>
+                    <input type="text" name="stayingDays" id="durationBox1" value="0" disabled>
+                </div><br/>
+
+                <div>
+                    <label for="food">Select Meals:</label>
+                    <input type="checkbox" id="food1" name="food" value="1" onclick="valiMember()" disabled>
+                    <label for="food1">Breakfast</label>
+                    <input type="checkbox" id="food2" name="food" value="2" onclick="valiMember()" disabled>
+                    <label for="food2">Lunch</label>
+                    <input type="checkbox" id="food3" name="food" value="3" onclick="valiMember()" disabled>
+                    <label for="food3">Dinner</label>
+                </div><br/>
+
+                <div>
+                    <label for="member">Membership:</label>
+                    <input type="radio" id="Ymember" name="member" value="1" onclick="memberDiscount()" required disabled>
+                    <label for="member">Yes, I am a member.</label>
+                    <input type="radio" id="Nmember" name="member" value="2" onclick="nonMember()" required disabled>
+                    <label for="member">No, I am not a member.</label>
+                </div><br/>
+
+                <div>
+                    <em>*Note: Members are to show their membership card at the front desk upon arrival to confirm payment</em>
+                </div><br/>
+
+                <div>
+                    <label for="totalPriceBox">Total (RM):</label>
+                    <input type="text" name="totalPricing" id="totalPriceBox" class=numbers value="0.00" disabled>
+                </div><br/>
+
+                <div>
+                    <label for="payment">Choose a payment:</label>
+                    <input type="radio" id="Bpayment" name="payment" value="payment" required>
+                    <label for="payment">Bank payment</label>
+                    <input type="radio" id="Cpayment" name="payment" value="payment" required>
+                    <label for="payment">Counter payment</label>
+                </div>
+
+                <div>
+                    <p>Other request: <input></p>
+                </div>
+
+                <input type="submit" value="Submit" style="margin: 10px; width: 80px; height: 30px;">
+                <input type="reset" value="Reset" style="margin: 10px; width: 80px; height: 30px;"><br/>
+             </form>
+             </div>
+             <footer>
+                <div><a href="message.html" class="gocomment">Want to leave a comment?</a></div>
+                
+                <div class="footerdiv" id="callfooterdiv">
+                <img src="images/layout/phone.png" alt="Contact Us" id="callicon" title="Ojingeo Hotel information">
+                <p class="contact">Contact Us</p>
+                    <div id="info">
+                    <a href="tel:+826-969-6769" style="color: #ffffff;">&#9742;: (+82)6-969-6769</a><br>
+                        <a href="mailto:info@ojingeohotel.com" style="color: #ffffff;">&#9993;: info@ojingeohotel.com</a>
+                        <br>Hongdae, Seoul, Korea &#127472;&#127479;
+                    </div>
+                </div>
+                <div class="footerdiv">
+                    <img src="images/layout/handshake.png" alt="Sponsorship"  title="Ojingeo Hotel Sponsorship" id="sponsoredicon">
+                    <p class="sponsored">Our Sponsorship</p>
+                    <img src="images/layout/sponsorship.jpg" alt="Sponsored" id="sponsored" title="Ojingeo Hotel Sponsorship">
+                </div>
+                <div class="footerdiv">
+                    <img src="images/layout/check-mark.png" alt="Secure Payment" title="Ojingeo Hotel Secure Payment" id="secureicon" >
+                    <p class="payment">Secure Payment</p>
+                    <img src="images/layout/payment.png" alt="Payment" id="payment" title="Ojingeo Hotel Secure Payment">
+                </div>
+                <p id="copyright">Copyrights &#169; 2021. All rights reserved by Ojingeo Hotel</p>
+                
+              </footer>
+              </body>
+
+</html>
