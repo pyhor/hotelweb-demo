@@ -1,0 +1,23 @@
+# macOS system files
+.DS_Store
+
+# Windows system files
+Thumbs.db
+
+# IDE/editor folders
+.vscode/
+.idea/
+
+# Log and temp files
+*.log
+*.tmp
+
+# Optional: build output (if you use bundlers later)
+dist/
+build/
+
+# Optional: node modules (if you use npm or yarn)
+node_modules/
+
+# Optional: environment config
+.env
