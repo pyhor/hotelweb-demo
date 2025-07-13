@@ -13,7 +13,7 @@
 
 //Navigation Menu Webpages
 
-*Home Page - home.html
+*Home Page - /pages/index.html
 {
     This is the home page for the hotel itself. It introduces a short video as a gallery for the hotel, an article for upcoming events with a link to the Events Page, a section for our hotel branches linking to all 6 of the Brances galleries, and finally a notice for newly updated policy due to Covid-19 linking to Policy Page. It is also made with JavaScript elements as there is a welcoming animation at the top of the page along with slideshow, and also countdown element.
 }
@@ -59,7 +59,6 @@
 {
     These are the gallery pages for our hotel branches. It consists of 8 pictures per page taken from each of our hotel branches in 6 separate pages.
 }
-
 
 
 *Policy Page 
