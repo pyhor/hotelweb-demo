@@ -1,94 +1,266 @@
-# Ojingeo Hotel - Next.js TypeScript Website
+# Ojingeo Hotel - Next.js 13+ TypeScript Website
 
-A modern hotel booking website built with Next.js, TypeScript, and Tailwind CSS.
+A modern hotel booking website built with Next.js 13+ (App Router), TypeScript, Tailwind CSS, and SCSS.
 
-## 🏗️ Project Structure
+## 🏗️ Project Structure (Updated for Next.js 13+)
 
 ```
-my-next-app/
-├── components/           ← Reusable React components
-│   ├── Layout.tsx       ← Main layout wrapper
-│   ├── Navigation.tsx   ← Navigation component
-│   ├── Footer.tsx       ← Footer component
-│   ├── BranchGallery.tsx ← Branch gallery component
-│   └── RoomDetail.tsx   ← Room detail component
-├── pages/               ← Next.js pages (file-based routing)
-│   ├── _app.tsx        ← Custom App component
-│   ├── index.tsx       ← Home page
-│   ├── aboutus.tsx     ← About us page
-│   ├── booking.tsx     ← Booking page
-│   ├── branches.tsx    ← Branches overview
-│   ├── facilities.tsx  ← Hotel facilities
-│   ├── events.tsx      ← Events page
-│   ├── reviews.tsx     ← Reviews page
-│   ├── membership.tsx  ← Membership signup
-│   ├── rooms.tsx       ← Rooms overview
-│   ├── [room-pages].tsx ← Individual room pages
-│   ├── [branch-pages].tsx ← Branch gallery pages
-│   └── [other-pages].tsx ← Additional pages
-├── public/              ← Static files (images, CSS, JS)
-│   ├── css/            ← Original CSS files
-│   ├── images/         ← Hotel images and assets
-│   └── js/             ← JavaScript files
-├── styles/              ← Global styles
-│   └── globals.css     ← Tailwind CSS imports
-├── types/               ← TypeScript type definitions
-│   └── jsx.d.ts        ← JSX type extensions
-├── next.config.js       ← Next.js configuration
-├── tailwind.config.js   ← Tailwind CSS configuration
-├── postcss.config.js    ← PostCSS configuration
-├── tsconfig.json        ← TypeScript configuration
-└── package.json         ← Dependencies and scripts
+ojingeo-hotel-demo/
+├── app/                      # App Router directory
+│   ├── (auth)/               # Auth route group
+│   ├── (dashboard)/          # Dashboard route group
+│   ├── about/
+│   │   └── page.tsx         # About page
+│   ├── account/
+│   │   └── page.tsx         # User account page
+│   ├── admin/
+│   │   └── page.tsx         # Admin dashboard
+│   ├── auth/
+│   │   └── page.tsx         # Authentication pages
+│   ├── booking/
+│   │   ├── page.tsx         # Booking page
+│   │   └── layout.tsx       # Booking layout
+│   ├── branches/
+│   │   ├── [branchId]/      # Dynamic branch pages
+│   │   ├── page.tsx         # Branches listing
+│   │   └── layout.tsx       # Branches layout
+│   ├── contact/
+│   │   └── page.tsx         # Contact page
+│   ├── facilities/
+│   │   └── page.tsx         # Facilities page
+│   ├── rooms/
+│   │   ├── [roomId]/        # Dynamic room pages
+│   │   ├── page.tsx         # Rooms listing
+│   │   └── layout.tsx       # Rooms layout
+│   ├── globals.scss         # Global styles
+│   ├── layout.tsx           # Root layout
+│   └── page.tsx             # Home page
+│
+├── public/                  # Static files
+│   ├── images/              # Optimized images
+│   │   ├── branches/        # Branch images
+│   │   ├── common/          # Common images
+│   │   ├── events/          # Event images
+│   │   ├── facilities/      # Facility images
+│   │   ├── rooms/           # Room images
+│   │   └── shared/          # Shared assets
+│   └── scss/                # SCSS files
+│
+├── src/
+│   ├── components/          # Feature-based components
+│   │   ├── auth/            # Auth components
+│   │   ├── booking/         # Booking components
+│   │   ├── branches/        # Branch components
+│   │   ├── common/          # Shared UI components
+│   │   ├── layout/          # Layout components
+│   │   ├── rooms/           # Room components
+│   │   └── ui/              # Reusable UI elements
+│   │
+│   ├── hooks/               # Custom React hooks
+│   ├── lib/                 # Utility functions
+│   ├── styles/              # Global styles and themes
+│   │   ├── _mixins.scss     # SCSS mixins
+│   │   ├── _variables.scss  # SCSS variables
+│   │   └── globals.scss     # Global styles
+│   ├── types/               # TypeScript types
+│   └── utils/               # Helper functions
+│
+├── .github/                 # GitHub workflows
+├── .next/                   # Build output
+├── .vscode/                 # VS Code settings
+├── node_modules/            # Dependencies
+├── .env.local              # Environment variables
+├── .eslintrc.json          # ESLint config
+├── .gitignore              # Git ignore file
+├── next-env.d.ts           # Next.js type declarations
+├── next.config.js          # Next.js config
+├── package.json            # Project metadata and scripts
+├── postcss.config.js       # PostCSS config
+├── tailwind.config.js      # Tailwind CSS config
+└── tsconfig.json           # TypeScript config
 ```
 
 ## 🚀 Getting Started
 
 ### Prerequisites
-- Node.js 18+ 
-- npm or yarn
+- Node.js 18+ (LTS recommended)
+- npm (v9+) or yarn (v1.22+)
+- Git
 
-### Installation
+### Quick Start
 
-1. **Install dependencies:**
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/your-username/ojingeo-hotel-demo.git
+   cd ojingeo-hotel-demo
+   ```
+
+2. **Install dependencies:**
    ```bash
    npm install
+   # or
+   yarn install
    ```
 
-2. **Run the development server:**
+3. **Set up environment variables:**
+   ```bash
+   cp .env.example .env.local
+   # Update the variables in .env.local
+   ```
+
+4. **Run the development server:**
    ```bash
    npm run dev
+   # or
+   yarn dev
    ```
 
-3. **Open your browser:**
+5. **Open your browser:**
    Navigate to [http://localhost:3000](http://localhost:3000)
 
-### Build for Production
+### Development Scripts
+
+- `dev` - Start development server
+- `build` - Create production build
+- `start` - Start production server
+- `lint` - Run ESLint
+- `lint:fix` - Fix ESLint issues
+- `type-check` - Check TypeScript types
+- `format` - Format code with Prettier
+- `test` - Run tests (Jest)
+- `storybook` - Start Storybook
+- `build-storybook` - Build Storybook
+
+### Production Build
 
 ```bash
+# Create production build
 npm run build
+
+# Start production server
 npm start
+
+# Or run with PM2
+npm install -g pm2
+pm2 start npm --name "ojingeo-hotel" -- start
 ```
 
 ## 🎨 Features
 
-- **Modern Stack**: Next.js 13+ with TypeScript
-- **Styling**: Tailwind CSS with custom hotel theme
-- **Responsive Design**: Mobile-first approach
-- **Interactive Components**: Slideshows, forms, and animations
-- **SEO Optimized**: Next.js built-in SEO features
-- **Performance**: Optimized images and code splitting
+- **Next.js 13+** - App Router, Server Components, and API Routes
+- **TypeScript** - Type-safe codebase
+- **Tailwind CSS** - Utility-first CSS with custom theme
+- **SCSS Modules** - Component-scoped styles
+- **Responsive Design** - Mobile-first, fully responsive
+- **Performance** - Code splitting, image optimization, and more
+- **SEO Optimized** - Metadata API and semantic HTML
+- **Modern Tooling** - ESLint, Prettier, and Husky
+- **Testing** - Jest and React Testing Library
+- **Storybook** - Component documentation
+- **Internationalization** - Built-in i18n support
 
-## 🏨 Pages Overview
+## 🏨 Pages & Features
 
-- **Home** (`/`) - Hotel overview with gallery and events
-- **Rooms** (`/rooms`) - Room types and details
-- **Facilities** (`/facilities`) - Hotel amenities and schedules
-- **Booking** (`/booking`) - Room booking interface
-- **Branches** (`/branches`) - Hotel locations with interactive map
-- **Events** (`/events`) - Upcoming hotel events
-- **Reviews** (`/reviews`) - Customer reviews and rating system
-- **Membership** (`/membership`) - Membership signup form
-- **About Us** (`/aboutus`) - Hotel history and information
+### Public Pages
+- **Home** (`/`) - Featured rooms, promotions, and quick booking
+- **Rooms** (`/rooms`) - Room types, amenities, and pricing
+- **Branches** (`/branches`) - Interactive map and branch details
+- **Facilities** (`/facilities`) - Hotel amenities and services
+- **About Us** (`/about`) - Hotel history, team, and values
+- **Contact** (`/contact`) - Contact form and information
+
+### User Features
+- **Booking System** - Real-time availability and reservations
+- **User Accounts** - Profile management and booking history
+- **Reviews** - Guest reviews and ratings
+- **Wishlist** - Save favorite rooms and packages
+
+### Admin Dashboard
+- **Bookings** - Manage reservations
+- **Rooms** - Room inventory and pricing
+- **Users** - User management
+- **Content** - Manage website content
+
+## 🛠 Development
+
+### Code Style
+- **ESLint** - Code linting
+- **Prettier** - Code formatting
+- **TypeScript** - Type checking
+
+### Git Workflow
+1. Create a new branch: `git checkout -b feature/your-feature`
+2. Make your changes
+3. Run tests: `npm test`
+4. Commit changes: `git commit -m "Add your feature"`
+5. Push to branch: `git push origin feature/your-feature`
+6. Create a Pull Request
+
+### Environment Variables
+
+Create a `.env.local` file with:
+
+```env
+# Next.js
+NEXT_PUBLIC_API_URL=http://localhost:3000/api
+NEXT_PUBLIC_GA_MEASUREMENT_ID=G-XXXXXXXXXX
+
+# Authentication
+NEXTAUTH_URL=http://localhost:3000
+NEXTAUTH_SECRET=your-secret-here
+
+# Database
+DATABASE_URL=your-database-url
+
+# Email
+SMTP_HOST=smtp.example.com
+SMTP_PORT=587
+SMTP_USER=user@example.com
+SMTP_PASSWORD=your-password
+SMTP_FROM=no-reply@example.com
+```
+
+## 📦 Dependencies
+
+### Main Dependencies
+- Next.js 13+
+- React 18+
+- TypeScript
+- Tailwind CSS
+- SCSS
+- Prisma (ORM)
+- NextAuth.js (Authentication)
+- React Hook Form (Forms)
+- React Query (Data Fetching)
+- Framer Motion (Animations)
+
+### Development Dependencies
+- ESLint
+- Prettier
+- Husky
+- Jest
+- Testing Library
+- Storybook
+- Cypress (E2E Testing)
+
+## 🤝 Contributing
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 🙏 Acknowledgments
+
+- [Next.js Documentation](https://nextjs.org/docs)
+- [Tailwind CSS Documentation](https://tailwindcss.com/docs)
+- [TypeScript Documentation](https://www.typescriptlang.org/docs/)
+- [React Documentation](https://reactjs.org/docs/getting-started.html)
 
 ## 🎯 Custom Tailwind Classes
 
