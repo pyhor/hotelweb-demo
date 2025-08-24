@@ -28,9 +28,159 @@ type PagesPageConfig = {
 
 
 
+// Validate ../../pages/_app.tsx
+{
+  const handler = {} as typeof import("../../pages/_app.js")
+  handler satisfies PagesPageConfig
+}
+
 // Validate ../../pages/aboutus.tsx
 {
   const handler = {} as typeof import("../../pages/aboutus.js")
+  handler satisfies PagesPageConfig
+}
+
+// Validate ../../pages/booking-form.tsx
+{
+  const handler = {} as typeof import("../../pages/booking-form.js")
+  handler satisfies PagesPageConfig
+}
+
+// Validate ../../pages/booking-received.tsx
+{
+  const handler = {} as typeof import("../../pages/booking-received.js")
+  handler satisfies PagesPageConfig
+}
+
+// Validate ../../pages/booking.tsx
+{
+  const handler = {} as typeof import("../../pages/booking.js")
+  handler satisfies PagesPageConfig
+}
+
+// Validate ../../pages/branches.tsx
+{
+  const handler = {} as typeof import("../../pages/branches.js")
+  handler satisfies PagesPageConfig
+}
+
+// Validate ../../pages/busan-branch.tsx
+{
+  const handler = {} as typeof import("../../pages/busan-branch.js")
+  handler satisfies PagesPageConfig
+}
+
+// Validate ../../pages/events.tsx
+{
+  const handler = {} as typeof import("../../pages/events.js")
+  handler satisfies PagesPageConfig
+}
+
+// Validate ../../pages/facilities.tsx
+{
+  const handler = {} as typeof import("../../pages/facilities.js")
+  handler satisfies PagesPageConfig
+}
+
+// Validate ../../pages/faq.tsx
+{
+  const handler = {} as typeof import("../../pages/faq.js")
+  handler satisfies PagesPageConfig
+}
+
+// Validate ../../pages/gangnam-branch.tsx
+{
+  const handler = {} as typeof import("../../pages/gangnam-branch.js")
+  handler satisfies PagesPageConfig
+}
+
+// Validate ../../pages/gwangju-branch.tsx
+{
+  const handler = {} as typeof import("../../pages/gwangju-branch.js")
+  handler satisfies PagesPageConfig
+}
+
+// Validate ../../pages/incheon-branch.tsx
+{
+  const handler = {} as typeof import("../../pages/incheon-branch.js")
+  handler satisfies PagesPageConfig
+}
+
+// Validate ../../pages/index.tsx
+{
+  const handler = {} as typeof import("../../pages/index.js")
+  handler satisfies PagesPageConfig
+}
+
+// Validate ../../pages/luxurydoublesuite.tsx
+{
+  const handler = {} as typeof import("../../pages/luxurydoublesuite.js")
+  handler satisfies PagesPageConfig
+}
+
+// Validate ../../pages/mapo-gu-branch.tsx
+{
+  const handler = {} as typeof import("../../pages/mapo-gu-branch.js")
+  handler satisfies PagesPageConfig
+}
+
+// Validate ../../pages/membership.tsx
+{
+  const handler = {} as typeof import("../../pages/membership.js")
+  handler satisfies PagesPageConfig
+}
+
+// Validate ../../pages/message.tsx
+{
+  const handler = {} as typeof import("../../pages/message.js")
+  handler satisfies PagesPageConfig
+}
+
+// Validate ../../pages/minisuite.tsx
+{
+  const handler = {} as typeof import("../../pages/minisuite.js")
+  handler satisfies PagesPageConfig
+}
+
+// Validate ../../pages/policy.tsx
+{
+  const handler = {} as typeof import("../../pages/policy.js")
+  handler satisfies PagesPageConfig
+}
+
+// Validate ../../pages/premiumsuite.tsx
+{
+  const handler = {} as typeof import("../../pages/premiumsuite.js")
+  handler satisfies PagesPageConfig
+}
+
+// Validate ../../pages/reply-message.tsx
+{
+  const handler = {} as typeof import("../../pages/reply-message.js")
+  handler satisfies PagesPageConfig
+}
+
+// Validate ../../pages/reviews.tsx
+{
+  const handler = {} as typeof import("../../pages/reviews.js")
+  handler satisfies PagesPageConfig
+}
+
+// Validate ../../pages/rooms.tsx
+{
+  const handler = {} as typeof import("../../pages/rooms.js")
+  handler satisfies PagesPageConfig
+}
+
+// Validate ../../pages/seoul-branch.tsx
+{
+  const handler = {} as typeof import("../../pages/seoul-branch.js")
+  handler satisfies PagesPageConfig
+}
+
+// Validate ../../pages/welcomemember.tsx
+{
+  const handler = {} as typeof import("../../pages/welcomemember.js")
   handler satisfies PagesPageConfig
 }
 

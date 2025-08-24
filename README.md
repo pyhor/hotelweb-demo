@@ -1,99 +1,149 @@
-***THIS WEBSITE IS ONLY USED TO DEMONSTRATE THE DESIGN. THEREFORE, IT DOES NOT HAVE ANY FUNCTIONALITY.***
+# Ojingeo Hotel - Next.js TypeScript Website
 
-*Introduction
+A modern hotel booking website built with Next.js, TypeScript, and Tailwind CSS.
 
-{
-    This is a hotel booking website developed using HTML, CSS and JavaScript. There are a total of 18 webpages, 14 of which can be found in the website's navigation menu and 4 can be accessed through functions in webpages.
-} 
+## 🏗️ Project Structure
 
-*Footer Area
-{
-    In the footer of all pages there is a link that leads directly to the Message page. Other than that it consists of standard hotel website footers such as contact information, sponsorships and payments.
-}
+```
+my-next-app/
+├── components/           ← Reusable React components
+│   ├── Layout.tsx       ← Main layout wrapper
+│   ├── Navigation.tsx   ← Navigation component
+│   ├── Footer.tsx       ← Footer component
+│   ├── BranchGallery.tsx ← Branch gallery component
+│   └── RoomDetail.tsx   ← Room detail component
+├── pages/               ← Next.js pages (file-based routing)
+│   ├── _app.tsx        ← Custom App component
+│   ├── index.tsx       ← Home page
+│   ├── aboutus.tsx     ← About us page
+│   ├── booking.tsx     ← Booking page
+│   ├── branches.tsx    ← Branches overview
+│   ├── facilities.tsx  ← Hotel facilities
+│   ├── events.tsx      ← Events page
+│   ├── reviews.tsx     ← Reviews page
+│   ├── membership.tsx  ← Membership signup
+│   ├── rooms.tsx       ← Rooms overview
+│   ├── [room-pages].tsx ← Individual room pages
+│   ├── [branch-pages].tsx ← Branch gallery pages
+│   └── [other-pages].tsx ← Additional pages
+├── public/              ← Static files (images, CSS, JS)
+│   ├── css/            ← Original CSS files
+│   ├── images/         ← Hotel images and assets
+│   └── js/             ← JavaScript files
+├── styles/              ← Global styles
+│   └── globals.css     ← Tailwind CSS imports
+├── types/               ← TypeScript type definitions
+│   └── jsx.d.ts        ← JSX type extensions
+├── next.config.js       ← Next.js configuration
+├── tailwind.config.js   ← Tailwind CSS configuration
+├── postcss.config.js    ← PostCSS configuration
+├── tsconfig.json        ← TypeScript configuration
+└── package.json         ← Dependencies and scripts
+```
 
-//Navigation Menu Webpages
+## 🚀 Getting Started
 
-*Home Page - /pages/index.html
-{
-    This is the home page for the hotel itself. It introduces a short video as a gallery for the hotel, an article for upcoming events with a link to the Events Page, a section for our hotel branches linking to all 6 of the Brances galleries, and finally a notice for newly updated policy due to Covid-19 linking to Policy Page. It is also made with JavaScript elements as there is a welcoming animation at the top of the page along with slideshow, and also countdown element.
-}
+### Prerequisites
+- Node.js 18+ 
+- npm or yarn
 
-*Rooms Page - rooms.html
-{
-	This is the showroom page for our hotel. There are 3 types of rooms such as  Mini Suite, Luxury Double Suite and Premium Suite. Below are some room facilities. Booking each of the rooms includes free breakfast. Users can click on the "Book Now" button and directly link to the Booking Form Page.
-}
+### Installation
 
-*Facilities Page - facilities.html
-{
-    This is the introductory page for facilities available at our hotel. It consists of briefing for 5 main hotel facilities along with schedules for them. The schedules are made neatly using tables to organize them.
-}
+1. **Install dependencies:**
+   ```bash
+   npm install
+   ```
 
+2. **Run the development server:**
+   ```bash
+   npm run dev
+   ```
 
+3. **Open your browser:**
+   Navigate to [http://localhost:3000](http://localhost:3000)
 
-*Booking Page - booking.html
-{
-    This is the introductory page for booking service at our hotel. It consists of briefing for room types and a "Book Now" button that leads directly to Booking Form Page, both of which is made neatly using tables for organization.
-}
+### Build for Production
 
-*Membership Page - membership.html
-{
-	This is the membership page for our hotel. Besides, there are some membership benefits descriptions. Customers that are interested in joining the membership can fill in the membership form and submit. After successfully submitting the membership form it will link to a welcome member page.
-}
+```bash
+npm run build
+npm start
+```
 
-*Events Page - events.html
-{
-    This is the introductory page for our hotel's upcoming events for this month. It consists of event details such as date, time and title neatly arranged into table. The poster thumbnails are custom-made gifs, and below them are links that redirect user to a png-version of the poster thumbnails for user to download.
-}
+## 🎨 Features
 
-*Reviews Page - reviews.html
-{
-	This is a review page for our hotel. It contains overall reviews. Previous customers that stayed in our hotel can write down their comment and the rating then submit the form to us.
-}
+- **Modern Stack**: Next.js 13+ with TypeScript
+- **Styling**: Tailwind CSS with custom hotel theme
+- **Responsive Design**: Mobile-first approach
+- **Interactive Components**: Slideshows, forms, and animations
+- **SEO Optimized**: Next.js built-in SEO features
+- **Performance**: Optimized images and code splitting
 
-*Branches Page - branches.html
-{
-    This is the introductory page for our hotel branches. It consists of an image map for all six hotel branches. There is a text prompting user to click on the icons of the hotel branches they want to see. Once clicked, it directs them to the hotel branch page.
-}
+## 🏨 Pages Overview
 
-*Branch Gallery Pages - seoul-branch.html, busan-branch.html, gangnam-branch.html, mapo-gu-branch.html, incheon-branch.html, gwangju-branch.html
-{
-    These are the gallery pages for our hotel branches. It consists of 8 pictures per page taken from each of our hotel branches in 6 separate pages.
-}
+- **Home** (`/`) - Hotel overview with gallery and events
+- **Rooms** (`/rooms`) - Room types and details
+- **Facilities** (`/facilities`) - Hotel amenities and schedules
+- **Booking** (`/booking`) - Room booking interface
+- **Branches** (`/branches`) - Hotel locations with interactive map
+- **Events** (`/events`) - Upcoming hotel events
+- **Reviews** (`/reviews`) - Customer reviews and rating system
+- **Membership** (`/membership`) - Membership signup form
+- **About Us** (`/aboutus`) - Hotel history and information
 
+## 🎯 Custom Tailwind Classes
 
-*Policy Page 
-{
-    This is the introductory page for our hotel policy. It consists of newly updated hotel policy affected by current Covid-19 situation.
-}
+- `text-hotel-brown` - #664228
+- `text-hotel-dark` - #4a3728  
+- `text-hotel-gold` - #ffe600
+- `bg-hotel-dark` - #4a3728
+- `bg-hotel-gold` - #ffe600
+- `animate-scroll` - Custom scrolling animation
 
-*FAQ Page 
-{
-    This is the introductory page of user's Frequently Asked Questions for our hotel. It consists of 10 most Frequently Asked Questions asked by users regarding our hotel, and the structure is made with JavaScript as well, as user can expand the questions to get its answers.
-}
+## 📱 Responsive Breakpoints
 
-*About Us Page 
-{
-    This is the introductory page for our hotel's history. It consists of 3 parts: Introduction, History and Walkthrough. Introduction part explains our hotel's beginnings and mission, History part explains our hotel's milestones using table organization, and Walkthrough part consists of 2 videos to give users a taste of the hotel experience.
-}
+- `sm:` - 640px and up
+- `md:` - 768px and up  
+- `lg:` - 1024px and up
+- `xl:` - 1280px and up
+- `2xl:` - 1536px and up
 
-//Redirected Pages
+## 🔧 Development
 
-*Message Page 
-{
-    Directed from the links in all pages' footer area. It consists of a form prompting user to leave their messages below. The form needs the user to enter their email and message (with minimum of 30 characters). Upon clicking the "Send" button, it will redirect user to Message Received Page if form is validated, if not then it will prompt user to input correctly. 
-}
+### Adding New Pages
+1. Create a new `.tsx` file in the `pages/` directory
+2. Use the `Layout` component for consistent styling
+3. Import necessary components from `components/`
 
-*Message Received Page 
-{
-    Directed from "Send" button. It consists of a thank you message for the user's input.
-}
+### Styling Guidelines
+- Use Tailwind CSS classes instead of inline styles
+- Utilize custom hotel theme colors
+- Follow mobile-first responsive design
+- Keep components reusable and modular
 
-*Booking Form Page 
-{
-    Directed from "Book Now" button. It consists of a conditional form made using JavaScript elements, which means the options are disabled until conditions are met. The user needs to select a room to enable check in and check out dates, then choose check in and check out days to enable meal selection, then select membership. After selecting membership, the grand total is calculated and shown. The user then needs to choose payment method and optionally write other requests. Upon clicking "Submit", validation is done using JavaScript to ensure all details are filled up. Once form is validated, a pop-up message appears and user is directed to Booking Received Page.
-}
+## 📦 Dependencies
 
-*Booking Received Page 
-{
-    Directed from "Submit" button. It consists of a message for booking confirmation and a thank you message.
-}
+### Core
+- Next.js 13.5.6
+- React 18.2.0
+- TypeScript 5.2.2
+
+### Styling
+- Tailwind CSS 3.3.5
+- PostCSS 8.4.31
+- Autoprefixer 10.4.16
+
+## 🤝 Contributing
+
+1. Fork the repository
+2. Create a feature branch
+3. Make your changes
+4. Test thoroughly
+5. Submit a pull request
+
+## 📄 License
+
+This project is licensed under the MIT License - see the LICENSE.md file for details.
+
+---
+
+**Ojingeo Hotel** - Experience luxury and comfort in South Korea 🇰🇷

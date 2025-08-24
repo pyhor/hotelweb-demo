@@ -1,34 +1,27 @@
 {
-  "name": "ojingeo-hotel-demo",
-  "version": "1.0.0",
-  "description": "***THIS WEBSITE IS ONLY USED TO DEMONSTRATE THE DESIGN. THEREFORE, IT DOES NOT HAVE ANY FUNCTIONALITY.***",
-  "main": "index.js",
+  "name": "ojingeo-hotel-nextjs",
+  "version": "0.1.0",
+  "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/pyhor/hotelweb-demo.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "type": "commonjs",
-  "bugs": {
-    "url": "https://github.com/pyhor/hotelweb-demo/issues"
-  },
-  "homepage": "https://github.com/pyhor/hotelweb-demo#readme",
   "dependencies": {
-    "next": "^15.5.0",
-    "react": "^19.1.1",
-    "react-dom": "^19.1.1"
+    "next": "13.5.6",
+    "react": "18.2.0",
+    "react-dom": "18.2.0"
   },
   "devDependencies": {
-    "@types/node": "^24.3.0",
-    "@types/react": "^19.1.11",
-    "typescript": "^5.9.2"
+    "@types/node": "20.8.6",
+    "@types/react": "18.2.28",
+    "@types/react-dom": "18.2.13",
+    "autoprefixer": "^10.4.16",
+    "eslint": "8.51.0",
+    "eslint-config-next": "13.5.6",
+    "postcss": "^8.4.31",
+    "tailwindcss": "^3.3.5",
+    "typescript": "5.2.2"
   }
 }
