@@ -3,8 +3,8 @@ const path = require('path');
 
 const nextConfig = {
   reactStrictMode: true,
+  // appDir is now default in Next.js 14+
   experimental: {
-    appDir: true,
     // Enable server components external packages if needed
     serverComponentsExternalPackages: ['@prisma/client', 'bcryptjs'],
   },
