@@ -1,0 +1,3 @@
+module.exports=[70864,a=>{a.n(a.i(33290))},5381,a=>{a.n(a.i(28997))},43619,a=>{a.n(a.i(79962))},13718,a=>{a.n(a.i(85523))},18198,a=>{a.n(a.i(45518))},62212,a=>{a.n(a.i(66114))},24355,a=>{"use strict";var b=a.i(7997);function c(){return(0,b.jsxs)("div",{className:"about-us-container",children:[(0,b.jsx)("h1",{children:"About Ojingeo Hotel"}),(0,b.jsx)("p",{children:"Welcome to Ojingeo Hotel, a luxury hotel experience in South Korea."}),(0,b.jsx)("p",{children:"Our hotel offers exceptional service and amenities for all our guests."})]})}a.s(["default",()=>c])}];
+
+//# sourceMappingURL=_d20fd630._.js.map

@@ -3,30 +3,43 @@ const path = require('path');
 
 const nextConfig = {
   reactStrictMode: true,
-  // appDir is now default in Next.js 14+
-  experimental: {
-    // Enable server components external packages if needed
-    serverComponentsExternalPackages: ['@prisma/client', 'bcryptjs'],
-  },
+  // Move serverExternalPackages to top level for Next.js 16
+  serverExternalPackages: ['@prisma/client', 'bcryptjs'],
+
   images: {
-    domains: ['localhost'],
-    // Configure image optimization
+    // Enable image optimization
+    unoptimized: false,
     formats: ['image/avif', 'image/webp'],
-    deviceSizes: [640, 750, 828, 1080, 1200, 1920, 2048, 3840],
+    deviceSizes: [640, 750, 828, 1080, 1200, 1920, 2048],
     imageSizes: [16, 32, 48, 64, 96, 128, 256, 384],
+    // Update to remotePatterns
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'ojingeo-hotel.vercel.app',
+      },
+      {
+        protocol: 'https',
+        hostname: 'images.unsplash.com',
+      },
+      {
+        protocol: 'https',
+        hostname: 'source.unsplash.com',
+      },
+      {
+        protocol: 'https',
+        hostname: 'lh3.googleusercontent.com',
+      },
+    ],
   },
+
+  // Silence Turbopack error for custom webpack config
+  turbopack: {},
+
   sassOptions: {
     includePaths: [
-      path.join(__dirname, 'src/styles'),
-      path.join(__dirname, 'app'),
-      path.join(__dirname, 'components'),
+      path.join(__dirname, 'styles'),
     ],
-    prependData: `
-      @use 'sass:math';
-      @use 'sass:color';
-      @import 'variables';
-      @import 'mixins';
-    `,
   },
   webpack: (config, { isServer, dev }) => {
     // Handle SCSS modules
@@ -100,6 +113,9 @@ const nextConfig = {
           loader: 'sass-loader',
           options: {
             sourceMap: dev,
+            sassOptions: {
+              outputStyle: 'compressed',
+            },
           },
         },
       ],
@@ -145,27 +161,14 @@ const nextConfig = {
     return config;
   },
   // Configure page extensions to support index/page.tsx structure
-  pageExtensions: ['page.tsx', 'page.tsx', 'page.jsx', 'page.js'],
-  // Enable static exports for better compatibility
-  output: 'export',
-  // Disable image optimization for static export
-  images: {
-    unoptimized: true,
-    domains: ['localhost'],
-    formats: ['image/avif', 'image/webp'],
-    deviceSizes: [640, 750, 828, 1080, 1200, 1920, 2048, 3840],
-    imageSizes: [16, 32, 48, 64, 96, 128, 256, 384],
-  },
+  pageExtensions: ['tsx', 'ts', 'jsx', 'js'],
+
   // Configure rewrites for API routes
   async rewrites() {
     return [
       {
         source: '/api/:path*',
         destination: '/api/:path*',
-      },
-      {
-        source: '/:path*',
-        destination: '/:path*',
       },
     ];
   },
@@ -205,59 +208,18 @@ const nextConfig = {
   output: 'standalone',
   // Configure production browser source maps
   productionBrowserSourceMaps: false,
-  // Configure webpack bundle analyzer
-  webpack5: true,
-  // Configure static export
-  trailingSlash: true,
-  // Configure images
-  images: {
-    // Configure image optimization
-    formats: ['image/avif', 'image/webp'],
-    deviceSizes: [640, 750, 828, 1080, 1200, 1920, 2048],
-    imageSizes: [16, 32, 48, 64, 96, 128, 256, 384],
-    // Configure domains for external images
-    domains: [
-      'localhost',
-      'ojingeo-hotel.vercel.app',
-      'images.unsplash.com',
-      'source.unsplash.com',
-      'lh3.googleusercontent.com',
-    ],
-  },
+
   // Configure TypeScript
   typescript: {
     // Enable TypeScript type checking during build
     ignoreBuildErrors: false,
   },
-  // Configure ESLint
-  eslint: {
-    // Enable ESLint during builds
-    ignoreDuringBuilds: false,
-  },
-  // Configure static export
-  output: 'standalone',
-  // Configure i18n for internationalization
-  i18n: {
-    locales: ['en', 'ko'],
-    defaultLocale: 'en',
-    localeDetection: true,
-  },
   // Configure compression
   compress: true,
   // Configure powered by header
   poweredByHeader: false,
-  // Configure react strict mode
-  reactStrictMode: true,
   // Configure static page generation timeout
   staticPageGenerationTimeout: 1000,
-  // Configure webpack dev middleware
-  webpackDevMiddleware: (config) => {
-    config.watchOptions = {
-      poll: 1000,
-      aggregateTimeout: 300,
-    };
-    return config;
-  },
 };
 
 // Add bundle analyzer in development

@@ -1,0 +1,28 @@
+body > h1#aboutUsTag, p#aboutUsOne, p#aboutUsTwo{
+    text-align: center;
+}
+
+section.leftSide, section#history {
+    text-align: left;
+    float: left;
+    padding-left: 20px;
+}
+
+caption, thead, tfoot {
+    text-align: center;
+    background-color: #4a3728;
+    color: white;
+}
+
+table, caption, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 10px;
+}
+
+section.videos {
+    text-align: left;
+    float: right;
+    padding: 15px;
+    border: 1px solid black;
+}

@@ -1,0 +1,16 @@
+{
+  "headers": {
+    "x-nextjs-stale-time": "300",
+    "x-nextjs-prerender": "1",
+    "x-next-cache-tags": "_N_T_/layout,_N_T_/rooms/layout,_N_T_/rooms/mini-suite/layout,_N_T_/rooms/mini-suite/page,_N_T_/rooms/mini-suite"
+  },
+  "segmentPaths": [
+    "/_tree",
+    "/_full",
+    "/rooms/mini-suite/__PAGE__",
+    "/rooms/mini-suite",
+    "/rooms",
+    "/_index",
+    "/_head"
+  ]
+}

@@ -1,0 +1,52 @@
+/*-----------------------------
+ARTICLE
+-----------------------------*/
+
+article{
+	padding:10px 0px 10px 0px;
+	width:100%;
+	height:auto;
+	color:#664228;
+}
+  .message{
+	width: 13cm;
+	height:12cm;
+	background-color: #ffffff;
+	font-size:15px;
+	position: relative;
+    left:30%;
+    top:10px;
+	bottom:40px;
+	text-align: center;
+	border-style: solid;
+  border-width: 10px 10px 10px 10px ;
+  border-color: #664228;
+  box-shadow:10px ;
+    margin-bottom: 6%;
+  }
+
+  #title{
+	  padding-top: 25px;
+  }
+
+  #box{
+	position: relative;
+	left:35px;
+	line-height:1.5;
+	text-align: left;
+	}
+
+
+/*article.reply*/
+img#bookinggif{
+	display: block;
+	margin-left: 35%;
+	padding:20px;
+	width: 20%;
+}
+
+#relay{
+	font-size: 21px;
+	text-align: center;
+	line-height:3.5;
+}

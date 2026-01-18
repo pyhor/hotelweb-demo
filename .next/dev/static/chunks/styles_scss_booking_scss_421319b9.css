@@ -1,0 +1,12 @@
+/* [project]/styles/scss/booking.scss.css [app-client] (css) */
+table, th, td {
+  border-collapse: collapse;
+  border: 2px solid #000;
+}
+
+p {
+  margin-top: 10px;
+  font-size: 25px;
+}
+
+/*# sourceMappingURL=styles_scss_booking_scss_421319b9.css.map*/

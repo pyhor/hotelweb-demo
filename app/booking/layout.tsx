@@ -1,7 +1,7 @@
 import { ReactNode } from 'react';
 import Navigation from '../../src/components/layout/Navigation';
 import Footer from '../../src/components/layout/Footer';
-import './styles.scss';
+import '../../styles/scss/booking.scss';
 
 export default function BookingLayout({
   children,

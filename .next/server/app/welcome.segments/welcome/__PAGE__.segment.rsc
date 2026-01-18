@@ -1,0 +1,5 @@
+1:"$Sreact.fragment"
+2:I[97367,["/_next/static/chunks/ff1a16fafef87110.js","/_next/static/chunks/7738b2b176cf8288.js"],"OutletBoundary"]
+3:"$Sreact.suspense"
+0:{"buildId":"D_cyCrVsKLuuq7iBqGhjJ","rsc":["$","$1","c",{"children":[["$","div",null,{"className":"welcome-container","children":[["$","h1",null,{"children":"Welcome to Ojingeo Hotel"}],["$","p",null,{"children":"Thank you for becoming a member of our hotel family."}],["$","p",null,{"children":"As a valued member, you now have access to exclusive benefits and offers."}],["$","div",null,{"className":"member-benefits","children":[["$","h2",null,{"children":"Your Member Benefits"}],["$","ul",null,{"children":[["$","li",null,{"children":"10% discount on all room bookings"}],["$","li",null,{"children":"Early check-in and late check-out"}],["$","li",null,{"children":"Complimentary room upgrade (subject to availability)"}],["$","li",null,{"children":"Access to member-only events"}]]}]]}]]}],null,["$","$L2",null,{"children":["$","$3",null,{"name":"Next.MetadataOutlet","children":"$@4"}]}]]}],"loading":null,"isPartial":false}
+4:null

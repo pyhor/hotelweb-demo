@@ -1,0 +1,312 @@
+@charset "utf-8";
+
+fieldset {
+  margin: 30px;
+}
+
+/* rooms.html */
+nav ul.roomnav{
+  list-style-type: none;
+  max-width:100%;
+  font-size:16px;
+  background-color:#161616;
+  height: 40px;
+  padding:20px 25px 20px 25px;
+  font-family: Verdana, Geneva, Arial, sans-serif;
+}
+
+nav ul.roomnav li{
+  float: left; 
+}
+
+nav ul.roomnav li a{
+  display:inline-block;
+  color:#ffffff;
+  padding: 12px 16px;
+  text-decoration:none;
+}
+
+nav ul.roomnav li a:hover{
+  background-color:#efe5b2;
+  color:black;
+}
+
+img.mySlides {
+    vertical-align: middle;
+    width: 840px;
+    height: 460px;
+}
+
+.slideshow-container {
+  max-width: 900px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  margin-left: -50px;
+  margin-right: -50px;
+  padding: 16px;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 25px 25px 25px 25px;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 25px 25px 25px 25px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: 0.4}
+  to {opacity: 1}
+}
+
+legend {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+table#roomprice {
+  width: 50%;
+  background-color: #ffb36c;
+  border-width: 10px;
+  border-style: outset;
+  border-color: rgb(255, 97, 24);
+  float: left;
+  margin: 5%;
+  margin-left: 25%;
+}
+
+tr.roompackage {
+  font-weight: bold;
+}
+
+fieldset.room {
+  width: 25%;
+  float: left;
+  border-style: outset;
+  background-image: url(images/rooms/logocrop.jpeg);
+  background-repeat: no-repeat;
+  background-size: 80px;
+  background-position-x: 95%;
+  background-position-y: 95%;
+}
+
+dd.roomdescription {
+  width: 220px;
+  height: 250px;
+}
+
+tbody > tr > td {
+  padding: 2%;
+}
+
+tfoot {
+  text-align: center;
+}
+
+a#booknowhover {
+  color: black;
+  background-color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 1% 35% 1% 35%;
+  margin-top: 5%;
+  margin-bottom: 2%;
+  border-color: 2px solid black;
+  border-radius: 25px 25px 25px 25px;
+  display: inline-table;
+}
+
+a#booknowhover:hover {
+  background-color: #00e600;
+}
+
+aside#memberaside {
+  width: 20%;
+  margin: 30px;
+  padding-bottom: 5%;
+  float: right;
+  border: 5px outset rgb(107, 94, 87);
+  color: #ffffff;
+  background-color: rgb(160, 138, 127);
+  display: table;
+}
+
+.memberdscription {
+  margin: 15% 5%;
+  list-style-type:square;
+  line-height: 22px;
+}
+
+.membership_form {
+  margin: 30px 30px 30px 60px;
+}
+
+#memberdate {
+  text-align:center; 
+  background-color:#ffffe0
+}
+
+label {
+  display: inline-block;
+  width: 120px;
+}
+
+input[type='submit'], input[type='button'] {
+  background-color: rgb(0, 230, 0);
+  float: right;
+  margin-left: 20px;
+  height: 50px;
+  width: 100px;
+  border-radius: 25px 25px 25px 25px;
+}
+
+input[type='button'] {
+  background-color: rgb(253, 90, 90);
+}
+
+#animationtext {
+  position: relative;
+  animation-duration: 15s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  color: #0900FE;
+}
+
+.animationimg {
+  height: 50px;
+}
+
+/* welcomemember.html */
+h2 {
+  text-align: center;
+  margin-top: 50px;
+}
+
+#homebutton {
+  height: 100px;
+}
+
+#homecomment {
+  height: 150px;
+  margin-right: 5%;
+}
+
+/* reviews.html */
+h1 {
+  margin: 30px;
+  text-align: center;
+}
+
+div > .reviews {
+  width: 60%;
+  margin:30px;
+  background-color: #ffffff;
+  border-style:dashed;
+}
+
+img.customer {
+  height: 50px;
+  float: left;
+  margin: 15px;
+}
+
+div > dt {
+  font-weight: bold;
+  margin: 20px 0px 0px 90px; 
+}
+
+img.star {
+  height: 20px;
+  margin: 5px 0px 10px 10px;
+}
+
+div > dd {
+  margin: 0px 10px 20px 90px; 
+}
+
+aside#overallreview {
+  float: right;
+  width: 30%;
+  margin-right: 40px;
+  border: 5px outset rgb(29, 97, 185);
+  background-color: rgb(166, 197, 255);
+  color: #000000;
+  padding-bottom: 3%;
+}
+
+.reviewstar {
+  height:30px;
+  padding-top: 10%;
+}
+
+.reviewmeter {
+  margin: 5% 5% 5% 10%;
+}
+
+#asidegivereview {
+  width: 90%;
+  margin: 40px;
+  border: 5px outset rgb(29, 97, 185);
+  background-color: rgb(166, 197, 255);
+  color: #000000;
+  padding-bottom: 3%;
+}
+
+.givereview {
+  padding-right: 10%;
+}
+
+.givereviewstar {
+  height:30px;
+}
+
+div[class^="col-"] {
+	float:left;
+	padding:5%;
+	box-sizing: border-box;
+}
+
+div.col-1-2{
+	width:50%;
+}
+
+#asidegivereview::after{
+  clear: both;
+  content: "";
+  display: table;
+}
+
+#reviewsubmit {
+  margin-right: 5%;
+  margin-top: 5%;
+}

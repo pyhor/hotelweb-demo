@@ -1,7 +1,7 @@
 import { ReactNode } from 'react';
-import Navigation from '@/components/Navigation';
-import Footer from '@/components/Footer';
-import './styles.scss';
+import Navigation from '@/components/layout/Navigation';
+import Footer from '@/components/layout/Footer';
+
 
 export default function RoomsLayout({
   children,

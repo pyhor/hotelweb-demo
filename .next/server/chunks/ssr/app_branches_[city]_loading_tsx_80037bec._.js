@@ -1,0 +1,3 @@
+module.exports=[59520,a=>{"use strict";var b=a.i(7997);function c(){return(0,b.jsx)("div",{className:"flex min-h-screen items-center justify-center bg-primary-50",children:(0,b.jsxs)("div",{className:"flex flex-col items-center gap-4",children:[(0,b.jsx)("div",{className:"h-12 w-12 animate-spin rounded-full border-4 border-gold-DEFAULT border-t-transparent"}),(0,b.jsx)("p",{className:"font-serif text-lg text-primary-900",children:"Loading Branch Details..."})]})})}a.s(["default",()=>c])}];
+
+//# sourceMappingURL=app_branches_%5Bcity%5D_loading_tsx_80037bec._.js.map
