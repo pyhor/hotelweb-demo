@@ -1,6 +1,0 @@
-{
-  "version": 3,
-  "sources": [],
-  "sections": [
-    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["turbopack:///turbopack:///[project]/styles/globals.scss"],"sourcesContent":["@tailwind base;\n@tailwind components;\n@tailwind utilities;\n\n/* Custom animations */\n@keyframes scroll-left {\n  0% { transform: translateX(100%); }\n  100% { transform: translateX(-100%); }\n}\n"],"names":[],"mappings":"AAAA;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;AAAA;;;;;AAAA;;;;AAAA;;;;;;;;;;AAAA;;;;;AAAA;;;;;;AAAA;;;;AAAA;;;;;AAAA;;;;;AAAA;;;;AAAA;;;;;;;AAAA;;;;AAAA;;;;;;;AAAA;;;;AAAA;;;;AAAA;;;;;;AAAA;;;;;;;;;;;;;AAAA;;;;AAAA;;;;;;AAAA;;;;AAAA;;;;AAAA;;;;AAAA;;;;AAAA;;;;AAAA;;;;;AAAA;;;;AAAA;;;;;AAAA;;;;AAAA;;;;AAAA;;;;;AAAA;;;;AAAA;;;;;;AAAA;;;;AAAA;;;;AAAA;;;;;AAAA;;;;AAAA;;;;AAAA;;;;;AAAA;;;;;AAAA;;;;AAAA;;;;AAAA;;;;;AAAA;;;;;AAAA;;;;;AAAA;;;;AAAA;;;;AAAA;;;;AAAA;;;;AAAA;;;;AAAA;;;;AAAA;;;;AAAA;;;;AAAA;;;;AAAA;;;;AAAA;;;;AAAA;;;;AAAA;;;;AAAA;;;;AAAA;;;;AAAA;;;;;;;;;;AAAA;;;;AAAA;;;;;;AAAA;;;;AAAA;;;;AAAA;;;;AAAA;;;;AAAA;;;;;AAAA;;;;;AAAA;;;;;AAAA;;;;;AAAA;;;;AAAA;;;;;AAAA;;;;;AAAA;;;;;AAAA;;;;;AAAA;;;;AAAA;;;;AAAA;;;;AAAA;;;;AAAA;;;;;AAAA;;;;;AAAA;;;;;AAAA;;;;;AAAA;;;;;AAAA;;;;;AAAA;;;;;AAAA;;;;AAAA;;;;AAAA;;;;;AAAA;;;;;AAAA;;;;;AAAA;;;;;AAAA;;;;;AAAA;;;;AAAA;;;;AAAA;;;;AAAA"}}]
-}
