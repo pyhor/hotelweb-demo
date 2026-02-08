@@ -21,3 +21,4 @@ node_modules/
 
 # Optional: environment config
 .env
+.next
