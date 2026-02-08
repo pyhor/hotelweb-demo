@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 4, "column": 0}, "map": {"version":3,"sources":["file:///Users/pyhor/Documents/work/hotelweb-demo/app/booking/layout.tsx"],"sourcesContent":["import { ReactNode } from 'react';\nimport Navigation from '../../src/components/layout/Navigation';\nimport Footer from '../../src/components/layout/Footer';\nimport '../../styles/scss/booking.scss';\n\nexport default function BookingLayout({\n  children,\n}: {\n  children: ReactNode;\n}) {\n  return (\n    <div className=\"booking-layout\">\n      <Navigation />\n      <main className=\"booking-main\">\n        {children}\n      </main>\n      <Footer />\n    </div>\n  );\n}\n"],"names":[],"mappings":";;;;;AACA;AACA;;;;;AAGe,SAAS,cAAc,EACpC,QAAQ,EAGT;IACC,qBACE,8OAAC;QAAI,WAAU;;0BACb,8OAAC,qJAAU;;;;;0BACX,8OAAC;gBAAK,WAAU;0BACb;;;;;;0BAEH,8OAAC,iJAAM;;;;;;;;;;;AAGb"}}]
+}
