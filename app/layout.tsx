@@ -9,6 +9,9 @@ export const metadata: Metadata = {
   title: 'The Haneul Grand | Where Luxury Meets the Sky',
   description:
     'Discover refined luxury at The Haneul Grand, inspired by the Korean word "Haneul" (Ha-neul), meaning "sky." Rooted in South Korea, our five-star sanctuary harmonizes serene natural beauty, timeless elegance, and world-class comfort for an unforgettable stay.',
+  icons: {
+    icon: '/images/logo-1.png',
+  },
 }
 
 import Navigation from '@/components/layout/Navigation';
