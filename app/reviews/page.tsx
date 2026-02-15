@@ -18,7 +18,7 @@ export default function ReviewsPage() {
   };
 
   const reviews = [
-    { name: 'Angela', rating: 5, comment: 'I like Ojingeo Hotel so much! Good service. A lot of facilities. Will come again! 💖', avatar: '/images/c1.png' },
+    { name: 'Angela', rating: 5, comment: 'I like The Haneul Grand so much! Good service. A lot of facilities. Will come again! 💖', avatar: '/images/c1.png' },
     { name: 'Daniel', rating: 4, comment: 'The hotel is clean. Bed was comfortable. Nice hotel. Love it!', avatar: '/images/c2.png' },
     { name: 'Amanda', rating: 3, comment: 'Service quite slow! The staff was not really friendly.', avatar: '/images/c3.png' },
     { name: 'John', rating: 2, comment: 'The pool was not in operation during our stay. Customer service quite slow!', avatar: '/images/c4.png' },

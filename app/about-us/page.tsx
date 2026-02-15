@@ -1,8 +1,8 @@
 import Image from 'next/image';
 
 export const metadata = {
-    title: 'About Us | Ojingeo Hotel',
-    description: 'Learn about the history and mission of Ojingeo Hotel.',
+    title: 'About Us | The Haneul Grand',
+    description: 'Learn about the history and mission of The Haneul Grand.',
 };
 
 export default function AboutUsPage() {
@@ -13,7 +13,7 @@ export default function AboutUsPage() {
                 <div className="absolute inset-0 z-0 opacity-40">
                     <Image
                         src="/images/layout/background.png"
-                        alt="Ojingeo Hotel Background"
+                        alt="The Haneul Grand Background"
                         fill
                         className="object-cover"
                         priority
@@ -38,7 +38,7 @@ export default function AboutUsPage() {
                     </div>
                     <div className="space-y-6 text-lg leading-relaxed text-gray-700">
                         <p>
-                            Ojingeo Hotel is a 4-star hotel located in South Korea. It was established in 2 April 2016.
+                            The Haneul Grand is a 4-star hotel located in South Korea. It was established in 2 April 2016.
                             We have our main headquarters located in Seoul and 5 other branches in Busan, Gangnam, Mapo-gu, Incheon and Gwangju.
                             Our hotels are situated near popular tourist attractions such as Bukchon Hanok Village in Seoul,
                             Chinatown in Incheon and Asia Culture Center in Gwangju, which allows for tourists to enjoy their

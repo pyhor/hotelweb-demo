@@ -1,12 +1,31 @@
 'use client';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Link from 'next/link';
 
 export default function Navigation() {
   const [isOpen, setIsOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 300);
+    };
+
+    // Check initial scroll position
+    handleScroll();
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
   return (
-    <header className="fixed top-0 z-50 w-full border-b border-primary-200 bg-white/95 backdrop-blur-md transition-all duration-300">
+    <header 
+      className={`fixed top-0 z-50 w-full transition-transform duration-500 ease-in-out ${
+        isScrolled 
+          ? 'translate-y-0 border-b border-primary-200 bg-white/95 backdrop-blur-md shadow-md' 
+          : '-translate-y-full border-transparent bg-transparent'
+      }`}
+    >
       <nav className="container mx-auto px-4 lg:px-6">
         <div className="flex h-20 items-center justify-between">
           <Link href="/" className="font-serif text-2xl font-bold tracking-tight text-hotel-head">

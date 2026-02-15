@@ -18,7 +18,7 @@ export default function FAQPage() {
     },
     {
       q: 'Is it facilities free for guests?',
-      a: 'Yes, all facilities are free for our Ojingeo Hotel guests. Booking prices include access to all facilities.',
+      a: 'Yes, all facilities are free for our The Haneul Grand guests. Booking prices include access to all facilities.',
     },
     {
       q: 'What types of credit cards can I use to guarantee my booking?',
@@ -30,7 +30,7 @@ export default function FAQPage() {
     },
     {
       q: 'Will the hotel hold my room if I\'m arriving late?',
-      a: 'Since your reservation is guaranteed with a credit card, Ojingeo Hotel is obliged to hold your room until 7 am the day after your planned arrival date.'
+      a: 'Since your reservation is guaranteed with a credit card, The Haneul Grand is obliged to hold your room until 7 am the day after your planned arrival date.'
     }
   ];
 

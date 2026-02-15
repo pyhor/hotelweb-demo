@@ -1,7 +1,7 @@
 import Image from 'next/image';
 
 export const metadata = {
-  title: 'Events & Happenings | Ojingeo Hotel',
+  title: 'Events & Happenings | The Haneul Grand',
   description: 'Join us for exclusive events and seasonal celebrations.',
 };
 
@@ -67,7 +67,7 @@ export default function EventsPage() {
             </div>
           ))}
         </div>
-        <p className="mt-8 text-center text-sm italic text-gray-500">* All events follow SOP. Exclusive to Ojingeo Hotel guests.</p>
+        <p className="mt-8 text-center text-sm italic text-gray-500">* All events follow SOP. Exclusive to The Haneul Grand guests.</p>
       </section>
     </div>
   );

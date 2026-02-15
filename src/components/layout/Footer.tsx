@@ -56,7 +56,7 @@ export default function Footer() {
         </div>
 
         <div className="mt-16 border-t border-primary-900 pt-8 text-center text-sm text-primary-300">
-          <p>&copy; {new Date().getFullYear()} Ojingeo Hotel. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} The Haneul Grand. All rights reserved.</p>
         </div>
       </div>
     </footer>

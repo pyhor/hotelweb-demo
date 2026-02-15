@@ -9,7 +9,7 @@ interface BranchGalleryProps {
 
 export default function BranchGallery({ branchName, cssFile, images }: BranchGalleryProps) {
   return (
-    <Layout title={`Ojingeo Hotel - ${branchName} Gallery`} pageId={`${branchName} Gallery`}>
+    <Layout title={`The Haneul Grand - ${branchName} Gallery`} pageId={`${branchName} Gallery`}>
       <Head>
         <link rel="stylesheet" href={`/css/${cssFile}.css`} />
       </Head>

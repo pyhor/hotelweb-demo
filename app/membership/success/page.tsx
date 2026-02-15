@@ -13,7 +13,7 @@ export default function MembershipSuccessPage() {
                 </div>
                 <h1 className="mb-4 font-serif text-3xl font-bold text-primary-900">Welcome to the Club!</h1>
                 <p className="mb-8 text-gray-600">
-                    Your membership application has been received. You are now a valued member of Ojingeo Hotel. Enjoy your exclusive benefits!
+                    Your membership application has been received. You are now a valued member of The Haneul Grand. Enjoy your exclusive benefits!
                 </p>
                 <Link
                     href="/"

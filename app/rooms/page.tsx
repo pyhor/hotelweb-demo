@@ -2,7 +2,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 
 export const metadata = {
-  title: 'Luxury Rooms & Suites | Ojingeo Hotel',
+  title: 'Luxury Rooms & Suites | The Haneul Grand',
   description: 'Explore our range of comfortable rooms and luxury suites.',
 };
 

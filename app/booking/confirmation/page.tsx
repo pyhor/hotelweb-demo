@@ -1,7 +1,7 @@
 import Link from 'next/link';
 
 export const metadata = {
-    title: 'Booking Confirmed | Ojingeo Hotel',
+    title: 'Booking Confirmed | The Haneul Grand',
     description: 'Your booking has been received successfully.',
 };
 
@@ -18,7 +18,7 @@ export default function BookingConfirmationPage() {
                 </div>
                 <h1 className="mb-4 font-serif text-3xl font-bold text-primary-900">Booking Received!</h1>
                 <p className="mb-8 text-gray-600">
-                    Your reservation was successful. Thank you for choosing Ojingeo Hotel. We look forward to welcoming you!
+                    Your reservation was successful. Thank you for choosing The Haneul Grand. We look forward to welcoming you!
                 </p>
                 <Link
                     href="/"

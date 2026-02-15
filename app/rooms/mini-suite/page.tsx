@@ -1,7 +1,7 @@
 import RoomDetail from '@/components/shared/RoomDetail';
 
 export const metadata = {
-    title: 'Mini Suite | Ojingeo Hotel',
+    title: 'Mini Suite | The Haneul Grand',
     description: 'Elegant suite with separate living area, perfect for couples or business travelers.',
 };
 

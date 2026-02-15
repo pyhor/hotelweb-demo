@@ -2,7 +2,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 
 export const metadata = {
-  title: 'Our Branches | Ojingeo Hotel',
+  title: 'Our Branches | The Haneul Grand',
   description: 'Visit our luxury hotels across South Korea.',
 };
 

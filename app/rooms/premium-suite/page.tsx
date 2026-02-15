@@ -1,7 +1,7 @@
 import RoomDetail from '@/components/shared/RoomDetail';
 
 export const metadata = {
-    title: 'Premium Suite | Ojingeo Hotel',
+    title: 'Premium Suite | The Haneul Grand',
     description: 'Luxury suite with panoramic views and exclusive services for a VIP experience.',
 };
 

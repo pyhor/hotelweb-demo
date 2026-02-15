@@ -1,7 +1,7 @@
 import Image from 'next/image';
 
 export const metadata = {
-  title: 'Facilities & Amenities | Ojingeo Hotel',
+  title: 'Facilities & Amenities | The Haneul Grand',
   description: 'Discover our world-class facilities including fine dining, pools, and fitness centers.',
 };
 

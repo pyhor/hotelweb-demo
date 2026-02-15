@@ -1,6 +1,6 @@
 export const metadata = {
-  title: 'Hotel Policy | Ojingeo Hotel',
-  description: 'Terms and conditions for your stay at Ojingeo Hotel.',
+  title: 'Hotel Policy | The Haneul Grand',
+  description: 'Terms and conditions for your stay at The Haneul Grand.',
 };
 
 export default function PolicyPage() {
