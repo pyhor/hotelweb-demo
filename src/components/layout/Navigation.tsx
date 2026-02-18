@@ -1,10 +1,13 @@
 'use client';
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 
 export default function Navigation() {
   const [isOpen, setIsOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+  const pathname = usePathname();
+  const isHome = pathname === '/';
 
   useEffect(() => {
     const handleScroll = () => {
@@ -21,7 +24,7 @@ export default function Navigation() {
   return (
     <header 
       className={`fixed top-0 z-50 w-full transition-transform duration-500 ease-in-out ${
-        isScrolled 
+        !isHome || isScrolled 
           ? 'translate-y-0 border-b border-primary-200 bg-white/95 backdrop-blur-md shadow-md' 
           : '-translate-y-full border-transparent bg-transparent'
       }`}

@@ -1,5 +1,5 @@
 import { ReactNode } from 'react';
-import '../../styles/scss/booking.scss';
+// import '../../styles/scss/booking.scss';
 
 export default function BookingLayout({
   children,

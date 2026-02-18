@@ -9,7 +9,7 @@ export default function Footer() {
           {/* Brand Column */}
           <div className="space-y-6">
             <div className="font-serif text-3xl font-bold">
-              <span className="text-gold-DEFAULT">O</span>jingeo Hotel
+              <span className="text-gold-DEFAULT">The</span> Haneul Grand
             </div>
             <p className="text-primary-200">
               Experience the pinnacle of luxury and hospitality in South Korea's most vibrant cities.

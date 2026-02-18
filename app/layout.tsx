@@ -17,6 +17,8 @@ export const metadata: Metadata = {
 import Navigation from '@/components/layout/Navigation';
 import Footer from '@/components/layout/Footer';
 
+import PageWrapper from '@/components/layout/PageWrapper';
+
 export default function RootLayout({
   children,
 }: {
@@ -26,7 +28,7 @@ export default function RootLayout({
     <html lang="en" className={`${inter.variable} ${playfair.variable}`}>
       <body className="bg-primary-50 text-gray-900 antialiased selection:bg-gold-DEFAULT selection:text-white">
         <Navigation />
-        <main className="min-h-screen">{children}</main>
+        <PageWrapper>{children}</PageWrapper>
         <Footer />
       </body>
     </html>
